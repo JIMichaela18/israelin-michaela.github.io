@@ -1,395 +1,537 @@
 <!DOCTYPE html>
 <html lang="en" data-mode="tech">
 <head>
-    <meta name="google-site-verification" content="GScowLnD0w4jl6QPMn1ALfYUDIc0_48aYjZlO3RTMDs" />
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Israelin Michaela">
-    <meta name="description" content="Israelin Michaela, Java and Spring Boot backend engineer with 4.5 years of experience, open to full-time roles.">
-    <title>Israelin Michaela | Software Engineer</title>
-    <link rel="canonical" href="https://jimichaela18.github.io/israelin-michaela.github.io/">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="en_IN">
-    <meta property="og:site_name" content="Israelin Michaela">
-    <meta property="og:title" content="Israelin Michaela | Software Engineer">
-    <meta property="og:description" content="Java and Spring Boot backend engineer with 4.5 years of experience, open to full-time backend and full-stack roles.">
-    <meta property="og:url" content="https://jimichaela18.github.io/israelin-michaela.github.io/">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Israelin Michaela | Software Engineer">
-    <meta name="twitter:description" content="Java and Spring Boot backend engineer with 4.5 years of experience, open to full-time backend and full-stack roles.">
-    <meta name="theme-color" content="#0b0f14">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=JetBrains+Mono:wght@400;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/marked@15.0.12/marked.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js"></script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Israelin Michaela",
-      "url": "https://jimichaela18.github.io/israelin-michaela.github.io/",
-      "email": "mailto:jimichaela18@gmail.com",
-      "jobTitle": "Software Engineer",
-      "description": "Java and Spring Boot backend engineer with 4.5 years of experience.",
-      "knowsAbout": ["Java", "Spring Boot", "RESTful APIs", "Microservices", "Kafka", "PostgreSQL", "MySQL"],
-      "sameAs": [
-        "https://github.com/JIMichaela18",
-        "https://www.linkedin.com/in/israelin-michaela-joseph-b088241b0/"
-      ]
-    }
-    </script>
-    <style>
-        :root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
-            --bg:#0b0f14;--surface:#121923;--ink:#e6edf3;--muted:#93a3b8;--line:#243040;--ac:#3ddc97;--aci:#06210f;
-            --disp:"Space Grotesk",system-ui,sans-serif;--mono:"JetBrains Mono",ui-monospace,monospace;--rad:6px;--n1:#17382d;--n2:#1b2a40;--n3:#12323b;--n4:#25352a;--n5:#222c38;--tape:rgba(255,255,255,.14);color-scheme:dark}
-        [data-mode="create"]{--bg:#f6efe4;--surface:#fffaf1;--ink:#231a17;--muted:#6b5d54;--line:#dccfbd;--ac:#d9381e;--aci:#fff7ee;
-            --disp:"Instrument Serif",Georgia,serif;--rad:22px;--n1:#ffe3c2;--n2:#ffd0c4;--n3:#f9e6a8;--n4:#f2d4c0;--n5:#e8d9c0;--tape:rgba(255,255,255,.6);color-scheme:light}
-        *,*::before,*::after{box-sizing:inherit}
-        html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
-        body{margin:0;background:var(--bg);color:var(--ink);font:400 1.02rem/1.65 "Space Grotesk",system-ui,sans-serif;transition:background .6s,color .6s}
-        [data-mode="tech"] body{background-image:linear-gradient(color-mix(in srgb,var(--line) 45%,transparent) 1px,transparent 1px),linear-gradient(90deg,color-mix(in srgb,var(--line) 45%,transparent) 1px,transparent 1px);background-size:44px 44px}
-        .spot{position:fixed;inset:0;pointer-events:none;background:radial-gradient(380px circle at var(--mx,50%) var(--my,25%),color-mix(in srgb,var(--ac) 18%,transparent),transparent 70%)}
-        .wrap{position:relative;max-width:1060px;margin:0 auto;padding:0 1.25rem}
-        a{color:inherit}
-        :focus-visible{outline:3px solid var(--ac);outline-offset:3px}
-        .top{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1.2rem 0;font:600 1rem var(--mono)}
-        .btn,.tab,.cq{font:600 .88rem var(--mono);color:inherit;background:transparent;border:2px solid var(--ink);border-radius:var(--rad);padding:.6rem 1.1rem;cursor:pointer;text-decoration:none;display:inline-block;transition:transform .15s,background .2s}
-        .btn:hover,.tab:hover,.cq:hover{transform:translateY(-2px)}
-        .btn.p,.tab[aria-pressed="true"]{background:var(--ac);border-color:var(--ac);color:var(--aci)}
-        h1,h2{font-family:var(--disp);font-weight:700;margin:0}
-        [data-mode="create"] h1,[data-mode="create"] h2{font-weight:400;font-style:italic}
-        h1{font-size:clamp(3.2rem,14vw,8.5rem);line-height:.95;letter-spacing:-.04em;margin:.6rem 0}
-        h1 span{display:block;width:fit-content;animation:pop .8s cubic-bezier(.2,.9,.3,1.3) both;transition:transform .2s}
-        h1 span:nth-child(2){animation-delay:.1s}h1 span:nth-child(3){animation-delay:.2s}h1 span:nth-child(4){animation-delay:.3s}
-        h1 span:first-child:hover{transform:translateY(-.08em) rotate(-7deg);color:var(--ac)}
-        @keyframes pop{from{opacity:0;transform:translateY(.4em) rotate(8deg)}}
-        @keyframes up{from{opacity:0;transform:translateY(10px)}}
-        @keyframes pulse{50%{opacity:.25}}
-        @keyframes mq{to{transform:translateX(-50%)}}
-        h2{font-size:clamp(2rem,5vw,3.2rem);line-height:1.05;margin-bottom:1.5rem}
-        .now{display:inline-flex;align-items:center;gap:.5rem;border:1.5px solid var(--line);background:var(--surface);border-radius:999px;padding:.25rem .9rem;font:.82rem var(--mono);margin:1.5rem 0 0}
-        .now i{width:.55rem;height:.55rem;border-radius:50%;background:var(--ac);animation:pulse 1.4s infinite}
-        .role{font:600 clamp(1.1rem,3vw,1.6rem) var(--mono);color:var(--ac);min-height:2.2rem;margin:0}
-        .role::after{content:"▌";animation:pulse 1s infinite}
-        .lead{color:var(--muted);margin:1rem 0 1.5rem}
-        .btns{display:flex;gap:.75rem;flex-wrap:wrap}
-        .stats{display:flex;gap:2.5rem;flex-wrap:wrap;margin:2.5rem 0 3rem}
-        .stats strong{display:block;font:700 2.4rem var(--disp)}.stats small{color:var(--muted);font:.8rem var(--mono)}
-        .mq{overflow:hidden;border-block:1px solid var(--line);padding:.8rem 0;font:600 1rem var(--mono);white-space:nowrap}
-        .mq-t{display:inline-block;animation:mq 30s linear infinite}
-        .mq-t span{margin:0 1.5rem}.mq-t span::before{content:"✦ ";color:var(--ac)}
-        section{padding:4.5rem 0 1rem}
-        .about{color:var(--muted)}.about strong{color:var(--ink)}
-        .tabs{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.4rem}
-        .tab{padding:.3rem .8rem;font-size:.75rem;border-width:1.5px}.pills{display:flex;flex-wrap:wrap;gap:.3rem}
-        .pill{border:1px solid var(--ink);border-radius:999px;padding:.05rem .45rem;font:.78rem var(--mono);background:var(--surface)}.in .pill{animation:up .4s both}
-        details{border:1px solid var(--line);border-radius:var(--rad);background:var(--surface);margin-bottom:.8rem}
-        summary{cursor:pointer;padding:1rem 1.2rem;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
-        summary::-webkit-details-marker{display:none}
-        summary small{font:400 .8rem var(--mono);color:var(--muted)}
-        details[open] summary{border-bottom:1px solid var(--line)}
-        details ul{margin:0;padding:.5rem 1.2rem 1rem 2.4rem;color:var(--muted)}
-        .pj{margin:0;padding:1rem 1.2rem 0;font:600 .82rem var(--mono);color:var(--ac)}
-        .tiles,.works{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1rem}
-        .tiles{gap:1.6rem}
-        .tile{position:relative;padding:1.6rem 1.2rem 1.2rem;color:var(--ink);background:var(--n1);box-shadow:0 10px 16px -6px rgba(0,0,0,.35);border-radius:2px 2px 2px 18px;transform:rotate(var(--t,-2deg));transition:transform .25s;font-family:"Instrument Serif",Georgia,serif}
-        .tile::before{content:"";position:absolute;top:-10px;left:50%;width:70px;height:20px;margin-left:-35px;background:var(--tape);transform:rotate(-3deg)}
-        .tile:nth-child(2n){background:var(--n2);--t:1.8deg}.tile:nth-child(3n){background:var(--n3);--t:-1deg}.tile:nth-child(4n){background:var(--n4);--t:2.2deg}.tile:nth-child(5n){background:var(--n5)}
-        .tile:hover{transform:rotate(0) translateY(-6px) scale(1.04)}
-        .tile b{display:block;font-size:2rem;font-weight:400}
-        .tile strong{display:block;font-size:1.5rem;font-weight:400;font-style:italic;line-height:1.1}
-        .tile span{display:block;margin-top:.4rem;font:.9rem/1.45 "Space Grotesk",system-ui,sans-serif}
-        .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--rad);padding:1.3rem;display:flex;flex-direction:column;gap:.6rem}
-        .card a{font-weight:600;color:var(--ac)}.card h3{margin:0;font-size:1.15rem}.card p{margin:0;color:var(--muted);font-size:.95rem}
-        .tags{display:flex;flex-wrap:wrap;gap:.4rem}.tags span{font:.75rem var(--mono);border:1px solid var(--line);border-radius:6px;padding:.1rem .5rem;color:var(--muted)}
-        .chat{background:var(--surface);border:1px solid var(--line);border-radius:var(--rad);padding:1rem}
-        .log{height:250px;overflow-y:auto;display:flex;flex-direction:column;gap:.6rem}
-        .msg{max-width:85%;padding:.6rem .9rem;border-radius:12px;font-size:.96rem}
-        .msg.bot{background:var(--bg);align-self:flex-start}.msg.me{background:var(--ink);color:var(--bg);align-self:flex-end}
-        .msg.bot p{margin:.15rem 0}.msg.bot p:first-child{margin-top:0}.msg.bot p:last-child{margin-bottom:0}
-        .msg.bot ul,.msg.bot ol{margin:.35rem 0;padding-left:1.35rem}.msg.bot li{margin:.15rem 0}
-        .msg.bot strong{font-weight:700}.msg.bot code{font-family:var(--mono);font-size:.9em}
-        .chips{display:flex;flex-wrap:wrap;gap:.5rem;margin:.8rem 0}
-        .cq{padding:.3rem .8rem;border-radius:999px;font-size:.78rem}
-        .row{display:flex;gap:.5rem}
-        .row input{flex:1;min-width:0;font:inherit;padding:.7rem .9rem;border-radius:var(--rad);border:1px solid var(--line);background:var(--bg);color:var(--ink)}
-        .badge{align-self:flex-start;display:inline-flex;align-items:center;gap:.4rem;font:600 .72rem var(--mono);color:var(--ac);border:1px solid var(--ac);border-radius:999px;padding:.05rem .6rem}
-        .badge i{width:.45rem;height:.45rem;border-radius:50%;background:var(--ac);animation:pulse 1.4s infinite}
-        .contact p{color:var(--muted)}
-        footer{padding:3rem 0;color:var(--muted);font:.8rem var(--mono)}
-        #education .card{position:relative;padding-top:1.9rem;box-shadow:0 10px 16px -8px rgba(0,0,0,.4);transform:rotate(var(--t,-1.2deg));transition:transform .25s}
-        #education .card:nth-child(even){--t:1.4deg}
-        #education .card:hover{transform:rotate(0) translateY(-5px)}
-        #education .card::before{content:"";position:absolute;top:-9px;left:50%;width:18px;height:18px;margin-left:-9px;border-radius:50%;background:radial-gradient(circle at 35% 30%,rgba(255,255,255,.75) 0 12%,var(--ac) 45%);box-shadow:0 4px 5px rgba(0,0,0,.45)}
-        .js .rv{opacity:0;transform:translateY(26px);transition:opacity .7s,transform .7s}
-        .js .rv.in{opacity:1;transform:none}
-        @media (max-width:600px){.stats{gap:1.5rem}}
-        @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}.js .rv{opacity:1;transform:none}}
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="google-site-verification" content="GScowLnD0w4jl6QPMn1ALfYUDIc0_48aYjZlO3RTMDs" />
+<meta name="robots" content="index, follow">
+<meta name="author" content="Israelin Michaela">
+<meta name="description" content="Israelin Michaela, Java and Spring Boot backend engineer with 4.5 years of experience, open to full-time roles.">
+<title>Israelin Michaela | Software Engineer</title>
+<link rel="canonical" href="https://jimichaela18.github.io/israelin-michaela.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_IN">
+<meta property="og:site_name" content="Israelin Michaela">
+<meta property="og:title" content="Israelin Michaela | Software Engineer">
+<meta property="og:description" content="Java and Spring Boot backend engineer with 4.5 years of experience, open to full-time backend and full-stack roles.">
+<meta property="og:url" content="https://jimichaela18.github.io/israelin-michaela.github.io/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Israelin Michaela | Software Engineer">
+<meta name="twitter:description" content="Java and Spring Boot backend engineer with 4.5 years of experience, open to full-time backend and full-stack roles.">
+<meta name="theme-color" content="#0b0f14">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=JetBrains+Mono:wght@400;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/marked@15.0.12/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js"></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Israelin Michaela","url":"https://jimichaela18.github.io/israelin-michaela.github.io/","email":"mailto:jimichaela18@gmail.com","jobTitle":"Software Engineer","description":"Java and Spring Boot backend engineer with 4.5 years of experience.","knowsAbout":["Java","Spring Boot","RESTful APIs","Microservices","Kafka","PostgreSQL","MySQL"],"sameAs":["https://github.com/JIMichaela18","https://www.linkedin.com/in/israelin-michaela-joseph-b088241b0/"]}
+</script>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#0b0f14;--surface:#121923;--ink:#e6edf3;--muted:#93a3b8;--line:#243040;--ac:#3ddc97;--aci:#06210f;
+--disp:"Space Grotesk",system-ui,sans-serif;--mono:"JetBrains Mono",ui-monospace,monospace;--rad:6px;--n1:#17382d;--n2:#1b2a40;--n3:#12323b;--n4:#25352a;--n5:#222c38;--tape:rgba(255,255,255,.14);color-scheme:dark}
+[data-mode="create"]{--bg:#f6efe4;--surface:#fffaf1;--ink:#231a17;--muted:#6b5d54;--line:#dccfbd;--ac:#d9381e;--aci:#fff7ee;
+--disp:"Instrument Serif",Georgia,serif;--rad:22px;--n1:#ffe3c2;--n2:#ffd0c4;--n3:#f9e6a8;--n4:#f2d4c0;--n5:#e8d9c0;--tape:rgba(255,255,255,.6);color-scheme:light}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.02rem/1.65 "Space Grotesk",system-ui,sans-serif;transition:background .6s,color .6s}
+[data-mode="tech"] body{background-image:linear-gradient(color-mix(in srgb,var(--line) 45%,transparent) 1px,transparent 1px),linear-gradient(90deg,color-mix(in srgb,var(--line) 45%,transparent) 1px,transparent 1px);background-size:44px 44px}
+.spot{position:fixed;inset:0;pointer-events:none;background:radial-gradient(380px circle at var(--mx,50%) var(--my,25%),color-mix(in srgb,var(--ac) 18%,transparent),transparent 70%)}
+.wrap{position:relative;max-width:1060px;margin:0 auto;padding:0 1.25rem}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--ac);outline-offset:3px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1.2rem 0;font:600 1rem var(--mono)}
+.btn,.tab,.cq{font:600 .88rem var(--mono);color:inherit;background:transparent;border:2px solid var(--ink);border-radius:var(--rad);padding:.6rem 1.1rem;cursor:pointer;text-decoration:none;display:inline-block;transition:transform .15s,background .2s}
+.btn:hover,.tab:hover,.cq:hover{transform:translateY(-2px)}
+.btn.p,.tab[aria-pressed="true"]{background:var(--ac);border-color:var(--ac);color:var(--aci)}
+h1,h2{font-family:var(--disp);font-weight:700;margin:0}
+[data-mode="create"] h1,[data-mode="create"] h2{font-weight:400;font-style:italic}
+h1{font-size:clamp(3.2rem,14vw,8.5rem);line-height:.95;letter-spacing:-.04em;margin:.6rem 0}
+h1 span{display:block;width:fit-content;animation:pop .8s cubic-bezier(.2,.9,.3,1.3) both;transition:transform .2s}
+h1 span:nth-child(2){animation-delay:.1s}h1 span:nth-child(3){animation-delay:.2s}h1 span:nth-child(4){animation-delay:.3s}
+h1 span:first-child:hover{transform:translateY(-.08em) rotate(-7deg);color:var(--ac)}
+@keyframes pop{from{opacity:0;transform:translateY(.4em) rotate(8deg)}}
+@keyframes up{from{opacity:0;transform:translateY(10px)}}
+@keyframes pulse{50%{opacity:.25}}
+@keyframes mq{to{transform:translateX(-50%)}}
+h2{font-size:clamp(2rem,5vw,3.2rem);line-height:1.05;margin-bottom:1.5rem}
+.now{display:inline-flex;align-items:center;gap:.5rem;border:1.5px solid var(--line);background:var(--surface);border-radius:999px;padding:.25rem .9rem;font:.82rem var(--mono);margin:1.5rem 0 0}
+.now i{width:.55rem;height:.55rem;border-radius:50%;background:var(--ac);animation:pulse 1.4s infinite}
+.role{font:600 clamp(1.1rem,3vw,1.6rem) var(--mono);color:var(--ac);min-height:2.2rem;margin:0}
+.role::after{content:"▌";animation:pulse 1s infinite}
+.lead{color:var(--muted);margin:1rem 0 1.5rem}
+.btns{display:flex;gap:.75rem;flex-wrap:wrap}
+.stats{display:flex;gap:2.5rem;flex-wrap:wrap;margin:2.5rem 0 3rem}
+.stats strong{display:block;font:700 2.4rem var(--disp)}.stats small{color:var(--muted);font:.8rem var(--mono)}
+.mq{overflow:hidden;border-block:1px solid var(--line);padding:.8rem 0;font:600 1rem var(--mono);white-space:nowrap}
+.mq-t{display:inline-block;animation:mq 30s linear infinite}
+.mq-t span{margin:0 1.5rem}.mq-t span::before{content:"✦ ";color:var(--ac)}
+section{padding:4.5rem 0 1rem}
+.about{color:var(--muted)}.about strong{color:var(--ink)}
+.tabs{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.4rem}
+.tab{padding:.3rem .8rem;font-size:.75rem;border-width:1.5px}.pills{display:flex;flex-wrap:wrap;gap:.3rem}
+.pill{border:1px solid var(--ink);border-radius:999px;padding:.05rem .45rem;font:.78rem var(--mono);background:var(--surface)}.in .pill{animation:up .4s both}
+details{border:1px solid var(--line);border-radius:var(--rad);background:var(--surface);margin-bottom:.8rem}
+summary{cursor:pointer;padding:1rem 1.2rem;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+summary::-webkit-details-marker{display:none}
+summary small{font:400 .8rem var(--mono);color:var(--muted)}
+details[open] summary{border-bottom:1px solid var(--line)}
+details ul{margin:0;padding:.5rem 1.2rem 1rem 2.4rem;color:var(--muted)}
+.pj{margin:0;padding:1rem 1.2rem 0;font:600 .82rem var(--mono);color:var(--ac)}
+.tiles,.works{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1rem}
+.tiles{gap:1.6rem}
+.tile{position:relative;padding:1.6rem 1.2rem 1.2rem;color:var(--ink);background:var(--n1);box-shadow:0 10px 16px -6px rgba(0,0,0,.35);border-radius:2px 2px 2px 18px;transform:rotate(var(--t,-2deg));transition:transform .25s;font-family:"Instrument Serif",Georgia,serif}
+.tile::before{content:"";position:absolute;top:-10px;left:50%;width:70px;height:20px;margin-left:-35px;background:var(--tape);transform:rotate(-3deg)}
+.tile:nth-child(2n){background:var(--n2);--t:1.8deg}.tile:nth-child(3n){background:var(--n3);--t:-1deg}.tile:nth-child(4n){background:var(--n4);--t:2.2deg}.tile:nth-child(5n){background:var(--n5)}
+.tile:hover{transform:rotate(0) translateY(-6px) scale(1.04)}
+.tile b{display:block;font-size:2rem;font-weight:400}
+.tile strong{display:block;font-size:1.5rem;font-weight:400;font-style:italic;line-height:1.1}
+.tile span{display:block;margin-top:.4rem;font:.9rem/1.45 "Space Grotesk",system-ui,sans-serif}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--rad);padding:1.3rem;display:flex;flex-direction:column;gap:.6rem}
+.card a{font-weight:600;color:var(--ac)}.card h3{margin:0;font-size:1.15rem}.card p{margin:0;color:var(--muted);font-size:.95rem}
+.tags{display:flex;flex-wrap:wrap;gap:.4rem}.tags span{font:.75rem var(--mono);border:1px solid var(--line);border-radius:6px;padding:.1rem .5rem;color:var(--muted)}
+.chat{background:var(--surface);border:1px solid var(--line);border-radius:var(--rad);padding:1rem}
+.log{height:250px;overflow-y:auto;display:flex;flex-direction:column;gap:.6rem}
+.msg{max-width:85%;padding:.6rem .9rem;border-radius:12px;font-size:.96rem}
+.msg.bot{background:var(--bg);align-self:flex-start}.msg.me{background:var(--ink);color:var(--bg);align-self:flex-end}
+.msg.bot p{margin:.15rem 0}.msg.bot p:first-child{margin-top:0}.msg.bot p:last-child{margin-bottom:0}
+.msg.bot ul,.msg.bot ol{margin:.35rem 0;padding-left:1.35rem}.msg.bot li{margin:.15rem 0}
+.msg.bot strong{font-weight:700}.msg.bot code{font-family:var(--mono);font-size:.9em}.msg.bot a{color:var(--ac)}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;margin:.8rem 0}
+.cq{padding:.3rem .8rem;border-radius:999px;font-size:.78rem}
+.row{display:flex;gap:.5rem}
+.row input{flex:1;min-width:0;font:inherit;padding:.7rem .9rem;border-radius:var(--rad);border:1px solid var(--line);background:var(--bg);color:var(--ink)}
+.badge{align-self:flex-start;display:inline-flex;align-items:center;gap:.4rem;font:600 .72rem var(--mono);color:var(--ac);border:1px solid var(--ac);border-radius:999px;padding:.05rem .6rem}
+.badge i{width:.45rem;height:.45rem;border-radius:50%;background:var(--ac);animation:pulse 1.4s infinite}
+.dock{position:fixed;right:12px;top:50%;transform:translateY(-50%);z-index:30;display:flex;flex-direction:column;align-items:center;gap:.3rem;padding:.5rem .4rem;border:1.5px solid var(--ac);border-radius:calc(var(--rad) + 14px);background:color-mix(in srgb,var(--surface) 88%,transparent);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);box-shadow:0 0 0 1px color-mix(in srgb,var(--ac) 25%,transparent),0 0 12px color-mix(in srgb,var(--ac) 55%,transparent),0 0 30px color-mix(in srgb,var(--ac) 28%,transparent),inset 0 0 14px color-mix(in srgb,var(--ac) 15%,transparent);animation:breathe 3.2s ease-in-out infinite}
+@keyframes breathe{50%{box-shadow:0 0 0 1px color-mix(in srgb,var(--ac) 40%,transparent),0 0 20px color-mix(in srgb,var(--ac) 75%,transparent),0 0 46px color-mix(in srgb,var(--ac) 38%,transparent),inset 0 0 18px color-mix(in srgb,var(--ac) 22%,transparent)}}
+.dock .hl{position:absolute;left:0;top:0;width:2.5rem;height:2.5rem;border-radius:50%;background:color-mix(in srgb,var(--ac) 18%,transparent);box-shadow:0 0 16px color-mix(in srgb,var(--ac) 60%,transparent),inset 0 0 0 1.5px var(--ac);transform:translateY(var(--y,0px));transition:transform .3s cubic-bezier(.3,1.4,.5,1),opacity .2s;pointer-events:none;opacity:0}
+.dock a{position:relative;z-index:1;width:2.5rem;height:2.5rem;display:grid;place-items:center;font:400 1.35rem var(--mono),"Segoe UI Symbol","Noto Sans Symbols 2",sans-serif;font-variant-emoji:text;color:var(--ink);text-decoration:none;border-radius:50%;transition:color .2s,text-shadow .2s}
+.dock a:hover,.dock a:focus-visible{color:var(--ac);text-shadow:0 0 10px var(--ac);outline:none}
+.dock a.on{color:var(--ac);text-shadow:0 0 10px var(--ac)}
+.dock a::before{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid var(--ac);opacity:0;pointer-events:none}
+.dock a.pop::before{animation:ripple .6s ease-out}
+@keyframes ripple{from{opacity:.9;transform:scale(.6)}to{opacity:0;transform:scale(1.45)}}
+.dock a::after{content:attr(data-l);position:absolute;right:calc(100% + .8rem);top:50%;transform:translateY(-50%) rotate(-3deg) scale(.6);transform-origin:right center;opacity:0;pointer-events:none;white-space:nowrap;font:600 .72rem var(--mono);background:var(--ac);color:var(--aci);padding:.15rem .6rem;border-radius:var(--rad);box-shadow:0 0 12px color-mix(in srgb,var(--ac) 60%,transparent);transition:opacity .15s,transform .2s cubic-bezier(.3,1.6,.5,1)}
+[data-mode="create"] .dock a::after{content:attr(data-c)}
+.dock a:hover::after,.dock a:focus-visible::after{opacity:1;transform:translateY(-50%) rotate(-3deg) scale(1)}
+@keyframes scribble{50%{transform:translateX(-10%) translateY(-2px) rotate(-8deg)}}
+section.flash{animation:secpop .9s cubic-bezier(.2,.9,.3,1.2)}
+@keyframes secpop{0%{transform:translateY(30px) scale(.985);opacity:.2}60%{transform:none;opacity:1}}
+section.flash h2{position:relative;display:inline-block;text-shadow:0 0 18px color-mix(in srgb,var(--ac) 70%,transparent)}
+section.flash h2::after{content:"";position:absolute;left:0;bottom:-.3rem;height:3px;background:var(--ac);box-shadow:0 0 12px var(--ac);animation:sweep .9s ease-out forwards}
+@keyframes sweep{from{width:0}to{width:100%}}
+@media (hover:none){.dock a.on::after{opacity:1;transform:translateY(-50%) rotate(-3deg) scale(1)}}
+@media (max-width:1180px){.wrap{padding-right:4rem}}
+@media (max-width:520px){.dock{right:6px;padding:.3rem .25rem;gap:.1rem}.dock a{width:2rem;height:2rem;font-size:1.15rem}.wrap{padding-right:3rem}}
+.trail{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;height:4px;z-index:40;background:color-mix(in srgb,var(--line) 70%,transparent);pointer-events:none}
+.trail::before{content:"";position:absolute;left:0;top:0;bottom:0;width:calc(var(--p,0) * 1%);background:repeating-linear-gradient(135deg,var(--ac) 0 2px,color-mix(in srgb,var(--ac) 55%,transparent) 2px 4px)}
+[data-mode="create"] .trail::before{background:repeating-linear-gradient(90deg,var(--ac) 0 9px,transparent 9px 13px)}
+.trail b{position:absolute;top:-.75rem;left:clamp(.6rem,calc(var(--p,0) * 1%),calc(100% - .6rem));transform:translateX(-50%);font:600 1.05rem var(--mono),"Segoe UI Symbol",sans-serif;font-variant-emoji:text;color:var(--ac)}
+.trail .r1{animation:pulse 1s infinite}
+.trail .r2,[data-mode="create"] .trail .r1{display:none}
+[data-mode="create"] .trail .r2{display:block;top:-1rem;transform:translateX(-10%);animation:scribble .6s ease-in-out infinite}
+.totop{position:fixed;right:12px;bottom:calc(env(safe-area-inset-bottom,0px) + 14px);z-index:30;width:2.9rem;height:2.9rem;border-radius:50%;display:grid;place-items:center;overflow:hidden;cursor:pointer;border:1.5px solid var(--ac);background:color-mix(in srgb,var(--surface) 88%,transparent);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);color:var(--ac);font:600 1.3rem var(--mono);font-variant-emoji:text;box-shadow:0 0 12px color-mix(in srgb,var(--ac) 55%,transparent),0 0 30px color-mix(in srgb,var(--ac) 25%,transparent),inset 0 0 12px color-mix(in srgb,var(--ac) 15%,transparent);opacity:0;transform:translateY(20px) scale(.8);pointer-events:none;transition:opacity .3s,transform .3s cubic-bezier(.3,1.5,.5,1)}
+.totop.show{opacity:1;transform:none;pointer-events:auto}
+.totop:hover{text-shadow:0 0 10px var(--ac)}
+.totop b{display:block;font-weight:600}
+@media (max-width:520px){.totop{right:6px;width:2.4rem;height:2.4rem;font-size:1.1rem;bottom:calc(env(safe-area-inset-bottom,0px) + 10px)}}
+.totop .call{display:block;font-size:1.1rem}
+.totop::before{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid var(--ac);animation:callbtn 1.4s ease-out infinite}
+@keyframes callbtn{from{opacity:.9;transform:scale(.7)}to{opacity:0;transform:scale(1.3)}}
+.aboard{position:fixed;right:calc(12px + 3.4rem);bottom:calc(env(safe-area-inset-bottom,0px) + 14px + .7rem);z-index:30;font:600 .72rem var(--mono);background:var(--ac);color:var(--aci);padding:.2rem .7rem;border-radius:var(--rad);box-shadow:0 0 12px color-mix(in srgb,var(--ac) 60%,transparent);white-space:nowrap;opacity:0;transform:translateX(10px) rotate(-3deg);pointer-events:none;transition:opacity .2s,transform .25s cubic-bezier(.3,1.6,.5,1)}
+.totop.show:hover + .aboard,.totop.show.peek + .aboard{opacity:1;transform:rotate(-3deg)}
+.snd{position:fixed;right:calc(12px + .45rem);bottom:calc(env(safe-area-inset-bottom,0px) + 14px + 3.3rem);z-index:30;width:2rem;height:2rem;border-radius:50%;border:1.5px solid var(--ac);background:color-mix(in srgb,var(--surface) 88%,transparent);color:var(--ac);cursor:pointer;font:600 1rem var(--mono);display:grid;place-items:center;opacity:0;pointer-events:none;transition:opacity .3s}
+.snd.show{opacity:1;pointer-events:auto}
+.snd.off{text-decoration:line-through}
+.snd.show.off{opacity:.55}
+@media (max-width:520px){.aboard{right:calc(6px + 2.8rem);bottom:calc(env(safe-area-inset-bottom,0px) + 10px + .4rem)}.snd{right:calc(6px + .2rem);bottom:calc(env(safe-area-inset-bottom,0px) + 10px + 2.8rem);width:1.8rem;height:1.8rem}}
+.ride{position:fixed;inset:0;z-index:50;pointer-events:none;opacity:0;transition:opacity .3s}
+.ride.go{opacity:1}
+.shaft{position:absolute;top:0;bottom:0;right:2.1rem;width:16px;border-inline:2px solid color-mix(in srgb,var(--ac) 70%,transparent);background:repeating-linear-gradient(0deg,color-mix(in srgb,var(--ac) 55%,transparent) 0 2px,transparent 2px 24px);filter:drop-shadow(0 0 6px var(--ac));opacity:.75}
+.cab{position:absolute;right:calc(2.1rem + 8px - 20px);bottom:0;width:40px;height:56px;border:2px solid var(--ac);border-radius:4px;background:var(--bg);color:var(--ac);filter:drop-shadow(0 0 10px var(--ac));transform:translateY(var(--ty,0px))}
+.cab::before{content:"";position:absolute;left:50%;bottom:100%;width:2px;height:100vh;margin-left:-1px;background:var(--ac)}
+.cab .in{position:absolute;inset:0;overflow:hidden;display:grid;place-items:center}
+.cab .pax{font:600 1.2rem var(--mono);font-variant-emoji:text}
+.cab .dr{position:absolute;top:0;bottom:0;width:50%;z-index:1;background:color-mix(in srgb,var(--ac) 25%,var(--bg));transition:transform .45s}
+.cab .l{left:0;border-right:1px solid var(--ac)}
+.cab .r{right:0;border-left:1px solid var(--ac)}
+.cab.open .l{transform:translateX(-100%)}
+.cab.open .r{transform:translateX(100%)}
+.cab em{position:absolute;right:calc(100% + 12px);top:50%;transform:translateY(-50%);white-space:nowrap;font:600 .72rem var(--mono);font-style:normal;background:var(--ac);color:var(--aci);padding:.15rem .6rem;border-radius:var(--rad);box-shadow:0 0 12px color-mix(in srgb,var(--ac) 60%,transparent)}
+.dock{transition:opacity .3s,transform .3s}
+.riding .dock{opacity:0;transform:translateY(-50%) translateX(24px);pointer-events:none}
+.totop .c2,.aboard .t2{display:none}
+.aboard i{font-style:normal}
+[data-mode="create"] .totop .c1,[data-mode="create"] .aboard .t1{display:none}
+[data-mode="create"] .totop .c2{display:block}
+[data-mode="create"] .aboard .t2{display:inline}
+[data-mode="create"] .shaft{display:none}
+[data-mode="create"] .cab{width:24px;height:24px;right:calc(2.1rem + 8px - 12px);border:0;border-radius:50%;background:var(--ac)}
+[data-mode="create"] .cab::before{bottom:auto;top:100%;width:3px;margin-left:-1.5px;border-radius:3px}
+[data-mode="create"] .cab .in{display:none}
+[data-mode="create"] .cab.bloom{box-shadow:0 -17px 0 -3px var(--ac),17px 0 0 -3px var(--ac),0 17px 0 -3px var(--ac),-17px 0 0 -3px var(--ac);animation:bloom .8s cubic-bezier(.3,1.6,.5,1)}
+@keyframes bloom{from{transform:translateY(var(--ty,0px)) scale(.5) rotate(-60deg)}to{transform:translateY(var(--ty,0px)) scale(1) rotate(0)}}
+.leaf{position:absolute;width:16px;height:10px;background:var(--ac);filter:drop-shadow(0 0 4px var(--ac))}
+.leaf.l{right:calc(2.1rem + 9px);border-radius:100% 0 100% 0;transform-origin:right center;transform:rotate(-28deg);animation:leafl .5s ease-out}
+.leaf.r{right:calc(2.1rem - 9px);border-radius:0 100% 0 100%;transform-origin:left center;transform:rotate(28deg);animation:leafr .5s ease-out}
+@keyframes leafl{from{transform:rotate(-28deg) scale(0)}}
+@keyframes leafr{from{transform:rotate(28deg) scale(0)}}
+.contact p{color:var(--muted)}
+footer{padding:3rem 0;color:var(--muted);font:.8rem var(--mono)}
+#education .card{position:relative;padding-top:1.9rem;box-shadow:0 10px 16px -8px rgba(0,0,0,.4);transform:rotate(var(--t,-1.2deg));transition:transform .25s}
+#education .card:nth-child(even){--t:1.4deg}
+#education .card:hover{transform:rotate(0) translateY(-5px)}
+#education .card::before{content:"";position:absolute;top:-9px;left:50%;width:18px;height:18px;margin-left:-9px;border-radius:50%;background:radial-gradient(circle at 35% 30%,rgba(255,255,255,.75) 0 12%,var(--ac) 45%);box-shadow:0 4px 5px rgba(0,0,0,.45)}
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .7s,transform .7s}
+.js .rv.in{opacity:1;transform:none}
+@media (max-width:600px){.stats{gap:1.5rem}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}.js .rv{opacity:1;transform:none}}
+</style>
 </head>
 <body>
 <div class="spot" aria-hidden="true"></div>
+<nav class="dock" id="dock" aria-label="Sections"></nav>
+<i class="trail" id="trail" aria-hidden="true"><b class="r1">▌</b><b class="r2">✎</b></i>
+<button class="totop" id="totop" type="button" aria-label="Take the elevator back to the top"><b class="call c1" aria-hidden="true">▲</b><b class="call c2" aria-hidden="true">❀</b></button><span class="aboard" aria-hidden="true"><i class="t1">Going up ▲</i><i class="t2">Grow up ❀</i></span>
+<button class="snd" id="snd" type="button" aria-pressed="true" aria-label="Turn sound effects off">♪</button>
+<div class="ride" id="ride" aria-hidden="true"><i class="shaft"></i><div class="cab" id="cab"><div class="in"><b class="pax">☺︎</b><i class="dr l"></i><i class="dr r"></i></div><em id="flr">G · Home</em></div></div>
 <div class="wrap">
-    <header class="top"><span>IM<span style="color:var(--ac)">.dev</span></span><button id="mode" class="btn" type="button" aria-pressed="false">Switch to Create ✦</button></header>
+  <header class="top"><span>IM<span style="color:var(--ac)">.dev</span></span><button id="mode" class="btn" type="button" aria-pressed="false">Switch to Create ✦</button></header>
 
-    <main>
-        <div class="hero">
-            <p class="now"><i></i>Currently tinkering: AI-driven Java applications from scratch 🛠️</p>
-            <h1 aria-label="Israelin Michaela"><span aria-hidden="true">Israelin</span><span aria-hidden="true">Michaela</span></h1>
-            <p class="role" id="type" aria-hidden="true"></p>
-            <p class="lead">Java backend engineer with 4.5 years of experience, and a maker at heart. I draw, paint, cook, bake, and garden. I enjoy experimenting new things. I’m looking for a full-time Java and Spring Boot backend or full-stack role. This page shows both sides of me and how they work together. Try the switch at the top.</p>
-            <div class="btns"><a class="btn p" href="#work">See my work</a><a class="btn" href="#contact">Hire me</a><a class="btn" href="#" data-resume download="Israelin_Michaela_Resume.pdf">Download resume ⬇</a></div>
-            <div class="stats">
-                <div><strong><span data-n="4.5">0</span></strong><small>years in Java</small></div>
-                <div><strong><span data-n="3">0</span></strong><small>engineering roles</small></div>
-                <div><strong><span data-n="7">0</span></strong><small>creative crafts</small></div>
-            </div>
-        </div>
+  <main>
+    <div class="hero">
+      <p class="now"><i></i>Currently exploring: Opportunities to learn, build, and contribute</p>
+      <h1 aria-label="Israelin Michaela"><span aria-hidden="true">Israelin</span><span aria-hidden="true">Michaela</span></h1>
+      <p class="role" id="type" aria-hidden="true"></p>
+      <p class="lead">Java backend engineer with 4.5 years of experience, and a maker at heart. I draw, paint, cook, bake, and garden. I enjoy experimenting new things. I’m looking for a full-time Java and Spring Boot backend or full-stack role. This page shows both sides of me and how they work together. Try the switch at the top.</p>
+      <div class="btns"><a class="btn p" href="#work">See my work</a><a class="btn" href="#contact">Hire me</a><a class="btn" href="#" data-resume download="Israelin_Michaela_Resume.pdf">Download resume ⬇</a></div>
+      <div class="stats">
+        <div><strong><span data-n="4.5">0</span></strong><small>years in Java</small></div>
+        <div><strong><span data-n="3">0</span></strong><small>engineering roles</small></div>
+        <div><strong><span data-n="7">0</span></strong><small>creative crafts</small></div>
+      </div>
+    </div>
 
-        <div class="mq" aria-hidden="true"><div class="mq-t"><span>Creative thinker</span><span>Rapid learner</span><span>Adaptable</span><span>End-to-end ownership</span><span>Cross-functional collaborator</span><span>Client requirement gathering</span><span>Knowledge sharing</span><span>POC experimentation</span></div></div>
+    <div class="mq" aria-hidden="true"><div class="mq-t"><span>Creative thinker</span><span>Rapid learner</span><span>Adaptable</span><span>End-to-end ownership</span><span>Cross-functional collaborator</span><span>Client requirement gathering</span><span>Knowledge sharing</span><span>POC experimentation</span></div></div>
 
-        <section id="about" class="rv">
-            <h2>The Human Behind the Code</h2>
-            <p class="about"><strong>Technical by foundation, creative by nature — I bring both together.</strong> I design, develop, and maintain reliable software systems, building practical solutions for complex business needs. Beyond technology, I enjoy creating things by hand. The process of sketching, experimenting, testing, and refining shapes the way I approach software engineering — with curiosity, attention to detail, and a focus on continuous improvement.</p>
-            <p class="about">I took a career break in May 2023 following a relocation. Now, I'm returning with fresh momentum, continuously upskilling to keep pace with evolving technologies and exploring AI development with Java.</p>
-            <p class="about">I'm excited to bring together my engineering experience, creative mindset, and passion for continuous learning to build meaningful and reliable software solutions.</p>
-        </section>
+    <section id="about" class="rv">
+      <h2>The Human Behind the Code</h2>
+      <p class="about"><strong>Technical by foundation, creative by nature — I bring both together.</strong> I design, develop, and maintain reliable software systems, building practical solutions for complex business needs. Beyond technology, I enjoy creating things by hand. The process of sketching, experimenting, testing, and refining shapes the way I approach software engineering — with curiosity, attention to detail, and a focus on continuous improvement.</p>
+      <p class="about">I took a career break in May 2023 following a relocation. Now, I’m returning with fresh momentum, continuously upskilling to keep pace with evolving technologies and exploring AI development with Java.</p>
+      <p class="about">I’m excited to bring together my engineering experience, creative mindset, and passion for continuous learning to build meaningful and reliable software solutions.</p>
+    </section>
 
-        <section id="skills" class="rv">
-            <h2>Tools of My Trade</h2>
-            <div class="tabs" id="tabs"></div>
-            <div class="pills" id="pills" aria-live="polite"></div>
-        </section>
+    <section id="skills" class="rv">
+      <h2>Tools of My Trade</h2>
+      <div class="tabs" id="tabs"></div>
+      <div class="pills" id="pills" aria-live="polite"></div>
+    </section>
 
-        <section id="experience" class="rv">
-            <h2>The Road So Far</h2>
-            <details open><summary>Career break: Relocation <small>May 2023 – present</small></summary>
-                <ul><li>Relocated, and now upskilling with AI: Diving deep into modern Java internals alongside distributed, event-driven architecture with microservices and Kafka.</li>
-                    <li>Learning by building: a RAG chatbot with LangChain4j, and next, a Java MCP server that gives AI clients live access to my GitHub projects and a safe way to contact me.</li></ul></details>
-            <details><summary>Software Engineer, Capestart <small>Mar 2022 – Apr 2023</small></summary>
-                <ul><li>Built and enhanced backend services for a light commercial product selection application.</li>
-                    <li>Supported application modernization: code and database analysis, migration and API lifecycle management.</li>
-                    <li>Improved performance through tuning, troubleshooting and root cause analysis (RCA); resolved production issues and supported deployments.</li>
-                    <li>Raised code quality through reviews, technical guidance and collaboration.</li></ul></details>
-            <details><summary>Full Stack Developer, NICSI, NIC <small>Jun 2019 – Feb 2022</small></summary>
-                <p class="pj">Project 2 · May 2020 – Feb 2022</p>
-                <ul><li>Enhanced an enterprise application for regulatory operations.</li>
-                    <li>Resolved defects, reviewed code, deployed to production, ran vulnerability assessments and fixed security defects.</li>
-                    <li>Built a proof of concept that automates document data extraction and validation with batch processing.</li></ul>
-                <p class="pj">Project 1 · Jun 2019 – Apr 2020</p>
-                <ul><li>Developed and enhanced an enterprise application for audit workflow management.</li>
-                    <li>Debugging, static code analysis and security defect remediation to improve stability.</li></ul></details>
-            <details><summary>Software Developer Intern, NIC <small>Nov 2018 – May 2019</small></summary>
-                <ul><li>Built backend services for a digital tracking application with role-based access control (RBAC).</li>
-                    <li>Redesigned the database schema for a key module and integrated it with the frontend.</li></ul></details>
-        </section>
+    <section id="experience" class="rv">
+      <h2>The Road So Far</h2>
+      <details open><summary>Career break: Relocation <small>May 2023 – present</small></summary>
+        <ul><li>Relocated, and now upskilling with AI: Diving deep into modern Java internals alongside distributed, event-driven architecture with microservices and Kafka.</li>
+        <li>Learning by building: a RAG chatbot with LangChain4j, and next, a Java MCP server that gives AI clients live access to my GitHub projects and a safe way to contact me.</li></ul></details>
+      <details><summary>Software Engineer, Capestart <small>Mar 2022 – Apr 2023</small></summary>
+        <ul><li>Built and enhanced backend services for a light commercial product selection application.</li>
+        <li>Supported application modernization: code and database analysis, migration and API lifecycle management.</li>
+        <li>Improved performance through tuning, troubleshooting and root cause analysis (RCA); resolved production issues and supported deployments.</li>
+        <li>Raised code quality through reviews, technical guidance and collaboration.</li></ul></details>
+      <details><summary>Full Stack Developer, NICSI, NIC <small>Jun 2019 – Feb 2022</small></summary>
+        <p class="pj">Project 2 · May 2020 – Feb 2022</p>
+        <ul><li>Enhanced an enterprise application for regulatory operations.</li>
+        <li>Resolved defects, reviewed code, deployed to production, ran vulnerability assessments and fixed security defects.</li>
+        <li>Built a proof of concept that automates document data extraction and validation with batch processing.</li></ul>
+        <p class="pj">Project 1 · Jun 2019 – Apr 2020</p>
+        <ul><li>Developed and enhanced an enterprise application for audit workflow management.</li>
+        <li>Debugging, static code analysis and security defect remediation to improve stability.</li></ul></details>
+      <details><summary>Software Developer Intern, NIC <small>Nov 2018 – May 2019</small></summary>
+        <ul><li>Built backend services for a digital tracking application with role-based access control (RBAC).</li>
+        <li>Redesigned the database schema for a key module and integrated it with the frontend.</li></ul></details>
+    </section>
 
-        <section id="education" class="rv">
-            <h2>Learning & Growing</h2>
-            <div class="works">
-                <article class="card"><h3>Master of Computer Applications (MCA)</h3><p>Mepco Schlenk Engineering College, 2017 – 2019</p></article>
-                <article class="card"><h3>Superstar Q3, 2022 · Capestart</h3><p>Recognized for high-quality delivery, rapid adaptation to new technologies, client requirement gathering, ownership and knowledge sharing.</p></article>
-                <article class="card"><h3>Cloud Computing · NPTEL</h3><p>Elite Certification, Aug 2017 – Oct 2017</p></article>
-                <article class="card"><h3>Languages</h3><p>English, Tamil</p></article>
-            </div>
-        </section>
+    <section id="education" class="rv">
+      <h2>Learning &amp; Growing</h2>
+      <div class="works">
+        <article class="card"><h3>Master of Computer Applications (MCA)</h3><p>Mepco Schlenk Engineering College, 2017 – 2019</p></article>
+        <article class="card"><h3>Superstar Q3, 2022 · Capestart</h3><p>Recognized for high-quality delivery, rapid adaptation to new technologies, client requirement gathering, ownership and knowledge sharing.</p></article>
+        <article class="card"><h3>Cloud Computing · NPTEL</h3><p>Elite Certification, Aug 2017 – Oct 2017</p></article>
+        <article class="card"><h3>Languages</h3><p>English, Tamil</p></article>
+      </div>
+    </section>
 
-        <section id="creative" class="rv">
-            <h2>The Bigger Picture</h2>
-            <p class="about" style="margin-bottom:1.2rem">Each craft shows up in how I engineer.</p>
-            <div class="tiles" id="tiles"></div>
-        </section>
+    <section id="creative" class="rv">
+      <h2>The Bigger Picture</h2>
+      <p class="about" style="margin-bottom:1.2rem">Each craft shows up in how I engineer.</p>
+      <div class="tiles" id="tiles"></div>
+    </section>
 
-        <section id="work" class="rv">
-            <h2>Things I've Built</h2>
-            <div class="works">
-                <article class="card"><h3>portfolio-chatbot</h3><p>A Spring Boot and LangChain4j chatbot that answers questions about me from a knowledge file (RAG), built to provide AI-powered portfolio assistant on this portfolio.</p><div class="tags"><span>Java</span><span>Spring Boot</span><span>LangChain4j</span><span>RAG</span></div><a href="https://github.com/JIMichaela18/portfolio-chatbot">View on GitHub</a></article>
-                <article class="card"><h3>digi-content</h3><span class="badge"><i></i>In progress</span><p>Production-style digital billing and subscription platform built with Java 27 and Spring Boot, exploring microservices, event-driven architecture, resilience, and distributed systems.</p><div class="tags"><span>Java</span><span>Spring Boot</span><span>Microservices</span><span>Kafka</span></div><a href="https://github.com/JIMichaela18/digi-content">View on GitHub</a></article>
-                <article class="card"><h3>spring-boot-jpa-relationship-mappings</h3><p>A Spring Boot and Spring Data JPA project demonstrating relational mapping annotations (@OneToOne, @OneToMany, @ManyToOne, @ManyToMany) through a RESTful API.</p><div class="tags"><span>Java</span><span>Spring Boot</span><span>JPA</span></div><a href="https://github.com/JIMichaela18/spring-boot-jpa-relationship-mappings">View on GitHub</a></article>
-                <article class="card"><h3>jsp-servlet-crud-employee-details</h3><p>A legacy Java web application with complete CRUD for employee records, using JSP, Servlets, JDBC and MySQL.</p><div class="tags"><span>Java</span><span>JSP</span><span>Servlets</span><span>JDBC</span><span>MySQL</span></div><a href="https://github.com/JIMichaela18/jsp-servlet-crud-employee-details">View on GitHub</a></article>
-            </div>
-        </section>
+    <section id="work" class="rv">
+      <h2>Things I’ve Built</h2>
+      <div class="works">
+        <article class="card"><h3>portfolio-chatbot</h3><p>A Spring Boot and LangChain4j chatbot that answers questions about me from a knowledge file (RAG), built to power the AI portfolio assistant on this site.</p><div class="tags"><span>Java</span><span>Spring Boot</span><span>LangChain4j</span><span>RAG</span></div><a href="https://github.com/JIMichaela18/portfolio-chatbot">View on GitHub</a></article>
+        <article class="card"><h3>digi-content</h3><span class="badge"><i></i>In progress</span><p>Production-style digital billing and subscription platform built with Java 27 and Spring Boot, exploring microservices, event-driven architecture, resilience, and distributed systems.</p><div class="tags"><span>Java</span><span>Spring Boot</span><span>Microservices</span><span>Kafka</span></div><a href="https://github.com/JIMichaela18/digi-content">View on GitHub</a></article>
+        <article class="card"><h3>spring-boot-jpa-relationship-mappings</h3><p>A Spring Boot and Spring Data JPA project demonstrating relational mapping annotations (@OneToOne, @OneToMany, @ManyToOne, @ManyToMany) through a RESTful API.</p><div class="tags"><span>Java</span><span>Spring Boot</span><span>JPA</span></div><a href="https://github.com/JIMichaela18/spring-boot-jpa-relationship-mappings">View on GitHub</a></article>
+        <article class="card"><h3>jsp-servlet-crud-employee-details</h3><p>A legacy Java web application with complete CRUD for employee records, using JSP, Servlets, JDBC and MySQL.</p><div class="tags"><span>Java</span><span>JSP</span><span>Servlets</span><span>JDBC</span><span>MySQL</span></div><a href="https://github.com/JIMichaela18/jsp-servlet-crud-employee-details">View on GitHub</a></article>
+      </div>
+    </section>
 
-        <section id="ask" class="rv">
-            <h2>A Few More Things About Me ✦</h2>
-            <div class="chat">
-                <div id="log" class="log" role="log" aria-live="polite"><div class="msg bot">Hi! I’m TOB, Israelin’s AI portfolio assistant. What would you like to know?</div></div>
-                <div id="chips" class="chips"></div>
-                <div class="row"><input id="q" type="text" placeholder="Ask TOB about Israelin's professional experience, technical skills, projects, creative work and career journey." aria-label="Your question"><button id="send" class="btn p" type="button">Ask</button></div>
-            </div>
-        </section>
+    <section id="ask" class="rv">
+      <h2>A Few More Things About Me ✦</h2>
+      <p class="about" style="margin:-.8rem 0 1rem">Chat with TOB, an AI assistant that answers from Israelin’s portfolio.</p>
+      <div class="chat">
+        <div id="log" class="log" role="log" aria-live="polite"><div class="msg bot">Hi! I’m TOB, Israelin’s AI portfolio assistant. What would you like to know?</div></div>
+        <div id="chips" class="chips"></div>
+        <div class="row"><input id="q" type="text" placeholder="Ask TOB about Israelin’s skills, projects or experience" aria-label="Your question"><button id="send" class="btn p" type="button">Ask</button></div>
+      </div>
+    </section>
 
-        <section id="contact" class="contact rv">
-            <h2>Let's Make Something Great ☺</h2>
-            <p>I’m looking for a full-time Java and Spring Boot backend or full-stack role, including AI-focused teams. Send me a message or download my resume.</p>
-            <div class="btns"><a class="btn p" href="mailto:jimichaela18@gmail.com" target="_blank" rel="noopener noreferrer">Email me</a><a class="btn" href="#" data-resume download="Israelin_Michaela_Resume.pdf">Download resume ⬇</a><a class="btn" href="https://github.com/JIMichaela18/">GitHub</a><a class="btn" href="https://www.linkedin.com/in/israelin-michaela-joseph-b088241b0/">LinkedIn</a></div>
-        </section>
-    </main>
-    <footer>© 2026 Israelin Michaela. Crafted with <span>&lt;code/&gt;</span> and creative tinkering.</footer>
+    <section id="contact" class="contact rv">
+      <h2>Let’s Make Something Great ☺</h2>
+      <p>Open to full-time roles in Java, Spring Boot, and AI-integrated software development, where I can contribute my experience and continue growing. Send me a message or download my resume.</p>
+      <div class="btns"><a class="btn p" href="mailto:jimichaela18@gmail.com" target="_blank" rel="noopener noreferrer">Email me</a><a class="btn" href="#" data-resume download="Israelin_Michaela_Resume.pdf">Download resume ⬇</a><a class="btn" href="https://github.com/JIMichaela18/">GitHub</a><a class="btn" href="https://www.linkedin.com/in/israelin-michaela-joseph-b088241b0/">LinkedIn</a></div>
+    </section>
+  </main>
+  <footer>© 2026 Israelin Michaela. Crafted with <span>&lt;code/&gt;</span> and creative tinkering.</footer>
 </div>
 <script>
-    (function(){
-        var d = document, R = d.documentElement; R.classList.add("js");
-        var $ = function(s){ return d.querySelector(s); }, $$ = function(s){ return [].slice.call(d.querySelectorAll(s)); };
-        var rm = matchMedia("(prefers-reduced-motion:reduce)").matches;
+(function(){
+  var d = document, R = d.documentElement; R.classList.add("js");
+  var $ = function(s){ return d.querySelector(s); }, $$ = function(s){ return [].slice.call(d.querySelectorAll(s)); };
+  var rm = matchMedia("(prefers-reduced-motion:reduce)").matches;
 
-        $$("[data-n]").forEach(function(n){
-            var to = Number(n.dataset.n), dec = n.dataset.n.indexOf(".") > -1, t0 = null;
-            function f(t){
-                t0 = t0 || t;
-                var p = Math.min((t - t0) / 1200, 1);
-                n.textContent = (to * p).toFixed(dec ? 1 : 0);
-                if (p < 1) requestAnimationFrame(f);
-            }
-            if (rm) n.textContent = n.dataset.n; else requestAnimationFrame(f);
-        });
+  var mb = $("#mode");
+  mb.onclick = function(){
+    var c = R.dataset.mode === "create";
+    R.dataset.mode = c ? "tech" : "create";
+    mb.setAttribute("aria-pressed", String(!c));
+    mb.textContent = c ? "Switch to Create ✦" : "Switch to Compile ▸";
+  };
+  addEventListener("pointermove", function(e){ R.style.setProperty("--mx", e.clientX + "px"); R.style.setProperty("--my", e.clientY + "px"); });
 
-        var mb = $("#mode");
-        mb.onclick = function(){
-            var c = R.dataset.mode === "create";
-            R.dataset.mode = c ? "tech" : "create";
-            mb.setAttribute("aria-pressed", String(!c));
-            mb.textContent = c ? "Switch to Create ✦" : "Switch to Compile ▸";
-        };
-        addEventListener("pointermove", function(e){ R.style.setProperty("--mx", e.clientX + "px"); R.style.setProperty("--my", e.clientY + "px"); });
+  var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if (e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } }); }, {threshold:.12});
+  $$(".rv").forEach(function(n){ io.observe(n); });
 
-        var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if (e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } }); }, {threshold:.12});
-        $$(".rv").forEach(function(n){ io.observe(n); });
+  var roles = ["Java Backend Engineer","Full Stack Developer","Spring Boot Developer","Cook, Painter, Gardener","Curious builder"], ri = 0, ci = 0, del = false, ty = $("#type");
+  function tick(){
+    var w = roles[ri]; ci += del ? -1 : 1; ty.textContent = w.slice(0, ci);
+    var s = del ? 30 : 70;
+    if (!del && ci === w.length){ del = true; s = 1400; } else if (del && ci === 0){ del = false; ri = (ri + 1) % roles.length; s = 300; }
+    setTimeout(tick, s);
+  }
+  if (rm) ty.textContent = roles[0]; else tick();
 
-        var roles = ["Java Backend Engineer","Full Stack Developer","Spring Boot Developer","Cook, Painter, Gardener","Curious builder"], ri = 0, ci = 0, del = false, ty = $("#type");
-        function tick(){
-            var w = roles[ri]; ci += del ? -1 : 1; ty.textContent = w.slice(0, ci);
-            var s = del ? 30 : 70;
-            if (!del && ci === w.length){ del = true; s = 1400; } else if (del && ci === 0){ del = false; ri = (ri + 1) % roles.length; s = 300; }
-            setTimeout(tick, s);
-        }
-        if (rm) ty.textContent = roles[0]; else tick();
+  $$("[data-n]").forEach(function(n){
+    var to = +n.dataset.n, dec = n.dataset.n.indexOf(".") > -1, t0 = null;
+    function f(t){ t0 = t0 || t; var p = Math.min((t - t0) / 1200, 1); n.textContent = (to * p).toFixed(dec ? 1 : 0); if (p < 1) requestAnimationFrame(f); }
+    if (rm) n.textContent = to; else requestAnimationFrame(f);
+  });
 
-        $$("#tabs button").forEach(function(b){ b.setAttribute("aria-pressed", "false"); });
-        var ST = {"Languages":["Java 11","SQL","JavaScript","HTML","CSS"],
-            "Frameworks":["Spring Boot","Spring MVC","Spring Data JPA","Hibernate","Spring Batch","Spring Tiles","Java EE","Jakarta EE","Struts2","DWR","EHCache","Bootstrap","jQuery"],
-            "Databases":["MySQL","PostgreSQL","IBM DB2"],
-            "Cloud & DevOps":["AWS S3","AWS SES","Docker","Azure Repos","Azure DevOps"],
-            "APIs & Security":["RESTful APIs","OAuth 2.0","JJWT"],
-            "Testing":["JUnit","Mockito","Postman"],
-            "Reporting & Visualization":["Jaspersoft Studio","Apache ECharts"],
-            "Version Control":["Git","TortoiseSVN"],
-            "Methodologies":["Agile","Waterfall","Jira"]};
-        var tb = $("#tabs"), pl = $("#pills");
-        function show(k){
-            $$("#tabs button").forEach(function(b){ b.setAttribute("aria-pressed", String(b.textContent === k)); });
-            pl.innerHTML = "";
-            ST[k].forEach(function(x, i){ var e = d.createElement("span"); e.className = "pill"; e.textContent = x; e.style.animationDelay = i * 40 + "ms"; pl.appendChild(e); });
-        }
-        Object.keys(ST).forEach(function(k){ var b = d.createElement("button"); b.type = "button"; b.className = "tab"; b.textContent = k; b.onclick = function(){ show(k); }; tb.appendChild(b); });
-        show("Languages");
+  var DK = [["about","\u263A\uFE0E","/about","Hello!"],["skills","\u2699\uFE0E","/skills","Toolbox"],["experience","\u279C","/experience","The road"],["education","\u2726","/learning","Gold stars"],["creative","\u2740","/creative","Craft corner"],["work","\u2318","/projects","Makes"],["ask","\u275D","/ask-tob","Chat with TOB"],["contact","\u2709\uFE0E","/contact","Say hi"]];
+  var dock = $("#dock");
+  DK.forEach(function(x){
+    var a = d.createElement("a"); a.href = "#" + x[0]; a.textContent = x[1];
+    a.setAttribute("data-l", x[2]); a.setAttribute("data-c", x[3]); a.setAttribute("aria-label", x[3]);
+    a.addEventListener("click", function(){
+      a.classList.remove("pop"); void a.offsetWidth; a.classList.add("pop");
+      var t = d.getElementById(x[0]);
+      setTimeout(function(){ t.classList.remove("flash"); void t.offsetWidth; t.classList.add("flash"); setTimeout(function(){ t.classList.remove("flash"); }, 1200); }, rm ? 0 : 500);
+    });
+    dock.appendChild(a);
+  });
+  var dl = $$("#dock a"), hl = d.createElement("i"), cur = null, hov = false;
+  hl.className = "hl"; dock.insertBefore(hl, dock.firstChild);
+  function place(a){
+    if (!a){ hl.style.opacity = 0; return; }
+    hl.style.width = a.offsetWidth + "px"; hl.style.height = a.offsetHeight + "px"; hl.style.left = a.offsetLeft + "px";
+    hl.style.setProperty("--y", a.offsetTop + "px"); hl.style.opacity = 1;
+  }
+  dl.forEach(function(a){
+    a.addEventListener("pointerenter", function(){ hov = true; place(a); });
+    a.addEventListener("focus", function(){ place(a); });
+  });
+  dock.addEventListener("pointerleave", function(){ hov = false; place(cur); });
+  dock.addEventListener("focusout", function(){ place(cur); });
+  addEventListener("resize", function(){ place(cur); });
+  var spy = new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if (!e.isIntersecting) return;
+      cur = null;
+      dl.forEach(function(a){ var on = a.getAttribute("href") === "#" + e.target.id; a.classList.toggle("on", on); if (on) cur = a; });
+      if (!hov) place(cur);
+    });
+  }, {rootMargin:"-45% 0px -50% 0px"});
+  $$("main section[id]").forEach(function(s){ spy.observe(s); });
+  function prog(){ var h = R.scrollHeight - innerHeight; R.style.setProperty("--p", h > 0 ? (scrollY / h * 100).toFixed(1) : 0); }
+  addEventListener("scroll", prog, {passive:true}); prog();
+  var tt = $("#totop"), snd = $("#snd"), rideEl = $("#ride"), cab = $("#cab"), flr = $("#flr"), riding = false, muted = false, AC = null;
+  try { muted = localStorage.getItem("im-mute") === "1"; } catch (e) {}
+  function syncSnd(){ snd.classList.toggle("off", muted); snd.setAttribute("aria-pressed", String(!muted)); snd.setAttribute("aria-label", muted ? "Turn sound effects on" : "Turn sound effects off"); }
+  syncSnd();
+  snd.addEventListener("click", function(){ muted = !muted; try { localStorage.setItem("im-mute", muted ? "1" : "0"); } catch (e) {} syncSnd(); });
+  function audio(){
+    if (muted || rm) return null;
+    if (!AC){ var C = window.AudioContext || window.webkitAudioContext; if (C) AC = new C(); }
+    if (AC && AC.state === "suspended") AC.resume();
+    return AC;
+  }
+  function tone(f, at, dur, type, vol){
+    var o = AC.createOscillator(), g = AC.createGain();
+    o.type = type; o.frequency.setValueAtTime(f, at);
+    g.gain.setValueAtTime(0.0001, at); g.gain.exponentialRampToValueAtTime(vol, at + 0.04); g.gain.exponentialRampToValueAtTime(0.0001, at + dur);
+    o.connect(g); g.connect(AC.destination); o.start(at); o.stop(at + dur + 0.05);
+  }
+  function beep(){ if (!audio()) return; if (R.dataset.mode === "create"){ rustle(); return; } var t = AC.currentTime; tone(880, t, .12, "sine", .1); tone(880, t + .2, .12, "sine", .1); }
+  function rustle(){
+    var len = Math.floor(AC.sampleRate * .5), buf = AC.createBuffer(1, len, AC.sampleRate), data = buf.getChannelData(0);
+    for (var i = 0; i < len; i++) data[i] = (Math.random() * 2 - 1) * Math.sin(Math.PI * i / len);
+    var src = AC.createBufferSource(), f = AC.createBiquadFilter(), g = AC.createGain();
+    f.type = "bandpass"; f.frequency.value = 2400; g.gain.value = .12;
+    src.buffer = buf; src.connect(f); f.connect(g); g.connect(AC.destination); src.start();
+  }
+  function floorTick(n){ if (R.dataset.mode === "create") tone(440 + (n || 0) * 110, AC.currentTime, .3, "sine", .07); else tone(1046, AC.currentTime, .05, "square", .04); }
+  function ding(){
+    if (!AC || muted) return;
+    var t = AC.currentTime;
+    if (R.dataset.mode === "create"){ [523, 659, 784, 1047].forEach(function(f, i){ tone(f, t + i * .13, .7, "sine", .08); }); return; }
+    tone(1175, t, .5, "sine", .12); tone(880, t + .4, .8, "sine", .12);
+  }
+  function replayName(){ $$("h1 span").forEach(function(sp){ sp.style.animation = "none"; void sp.offsetWidth; sp.style.animation = ""; }); }
+  function toggleTop(){
+    var vis = scrollY > 500 && !riding, was = tt.classList.contains("show");
+    tt.classList.toggle("show", vis); snd.classList.toggle("show", vis);
+    tt.setAttribute("aria-label", R.dataset.mode === "create" ? "Grow the vine back to the top" : "Take the elevator back to the top");
+    if (vis && !was){ tt.classList.add("peek"); setTimeout(function(){ tt.classList.remove("peek"); }, 2600); }
+  }
+  addEventListener("scroll", toggleTop, {passive:true}); toggleTop();
+  function ease(t){ return t < .5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2; }
+    function ride(y0){
+    riding = true; R.classList.add("riding"); toggleTop();
+    var plant = R.dataset.mode === "create", leaves = [], side = 0;
+    var FL = [["about","1 \u00b7 About"],["skills","2 \u00b7 Skills"],["experience","3 \u00b7 Experience"],["education","4 \u00b7 Learning"],["creative","5 \u00b7 Creative"],["work","6 \u00b7 Projects"],["ask","7 \u00b7 Ask TOB"],["contact","8 \u00b7 Contact"]];
+    var tops = FL.map(function(f){ var el = d.getElementById(f[0]); return el ? el.getBoundingClientRect().top + scrollY : 0; });
+    function floorAt(y){ var line = y + innerHeight * .4, cur = "G \u00b7 Home"; for (var i = 0; i < FL.length; i++){ if (tops[i] <= line) cur = FL[i][1]; } return cur; }
+    var STG = ["Seed", "Sprout", "Leaves", "Bud", "Bloom"];
+    function stageAt(p){ return STG[p < .2 ? 0 : p < .45 ? 1 : p < .7 ? 2 : p < .95 ? 3 : 4]; }
+    var last = plant ? STG[0] : floorAt(y0); flr.textContent = last;
+    rideEl.classList.add("go"); cab.classList.remove("bloom"); cab.classList.add("open"); cab.style.setProperty("--ty", "0px");
+    beep();
+    var hum = null;
+    if (!plant && audio() && !muted){ var g = AC.createGain(); hum = AC.createOscillator(); hum.type = "sawtooth"; hum.frequency.value = 58; g.gain.value = .02; hum.connect(g); g.connect(AC.destination); hum.start(); }
+    var t0 = null, dur = Math.min(3200, 1800 + y0 * 0.1), travel = innerHeight - 60, nextLeaf = 40;
+    function leaf(y){ var l = d.createElement("i"); l.className = "leaf " + (side++ % 2 ? "r" : "l"); l.style.bottom = y + "px"; rideEl.appendChild(l); leaves.push(l); }
+    function arrive(){
+      if (hum){ try { hum.stop(); } catch (e) {} }
+      if (plant) cab.classList.add("bloom"); else cab.classList.add("open");
+      ding(); replayName();
+      setTimeout(function(){
+        rideEl.classList.remove("go"); riding = false; R.classList.remove("riding"); toggleTop();
+        leaves.forEach(function(l){ l.remove(); }); cab.classList.remove("bloom");
+      }, plant ? 1800 : 1100);
+    }
+    function step(t){
+      t0 = t0 || t;
+      var p = Math.min((t - t0) / dur, 1), e = ease(p), y = y0 * (1 - e);
+      cab.style.setProperty("--ty", (-travel * e) + "px");
+      scrollTo({top: y, behavior:"instant"});
+      var lb = plant ? stageAt(p) : floorAt(y);
+      if (lb !== last){ last = lb; flr.textContent = lb; if (AC && !muted) floorTick(plant ? STG.indexOf(lb) : 0); }
+      if (plant && travel * e >= nextLeaf){ leaf(travel * e); nextLeaf += 64; }
+      if (p < 1) requestAnimationFrame(step); else arrive();
+    }
+    setTimeout(function(){ cab.classList.remove("open"); }, 80);
+    setTimeout(function(){ requestAnimationFrame(step); }, plant ? 300 : 650);
+  }
+  tt.addEventListener("click", function(){
+    if (riding) return;
+    var y0 = scrollY;
+    if (rm){ scrollTo({top:0, behavior:"instant"}); return; }
+    ride(y0);
+  });
 
-        var CT = [["🎨","Drawing","Sketching first, like designing a schema before writing code."],
-            ["🖌️","Painting","Working in layers, like building features and refining the details."],
-            ["📖","Crafting recipes","A recipe is an algorithm: inputs, clear steps and a tested result."],
-            ["🍳","Cooking","Improvising under pressure, like debugging a production issue."],
-            ["🧁","Baking","Precision and patience, like a careful deployment."],
-            ["✂️","Art and craft projects","Making something from scratch, end to end, with full ownership."],
-            ["🌱","Gardening","Slow growth and regular care, like maintaining a healthy codebase."]];
-        var tg = $("#tiles");
-        CT.forEach(function(c){
-            var b = d.createElement("div"); b.className = "tile";
-            b.innerHTML = "<b>" + c[0] + "</b><strong>" + c[1] + "</strong><span>" + c[2] + "</span>";
-            tg.appendChild(b);
-        });
+  var mt = $(".mq-t"); mt.innerHTML += mt.innerHTML;
 
-        var RESUME = "JVBERi0xLjQKJZOMi54gUmVwb3J0TGFiIEdlbmVyYXRlZCBQREYgZG9jdW1lbnQgKG9wZW5zb3VyY2UpCjEgMCBvYmoKPDwKL0YxIDIgMCBSIC9GMiAzIDAgUiAvRjMgNSAwIFIKPj4KZW5kb2JqCjIgMCBvYmoKPDwKL0Jhc2VGb250IC9IZWx2ZXRpY2EgL0VuY29kaW5nIC9XaW5BbnNpRW5jb2RpbmcgL05hbWUgL0YxIC9TdWJ0eXBlIC9UeXBlMSAvVHlwZSAvRm9udAo+PgplbmRvYmoKMyAwIG9iago8PAovQmFzZUZvbnQgL0hlbHZldGljYS1Cb2xkIC9FbmNvZGluZyAvV2luQW5zaUVuY29kaW5nIC9OYW1lIC9GMiAvU3VidHlwZSAvVHlwZTEgL1R5cGUgL0ZvbnQKPj4KZW5kb2JqCjQgMCBvYmoKPDwKL0EgPDwKL1MgL1VSSSAvVHlwZSAvQWN0aW9uIC9VUkkgKGh0dHBzOi8vd3d3LmxpbmtlZGluLmNvbS9pbi9pc3JhZWxpbi1taWNoYWVsYS1qb3NlcGgtYjA4ODI0MWIwLykKPj4gL0JvcmRlciBbIDAgMCAwIF0gL1JlY3QgWyAxNTguMTg1IDc2Mi4yMjMzIDM2NS4yNTcgNzczLjAyMzMgXSAvU3VidHlwZSAvTGluayAvVHlwZSAvQW5ub3QKPj4KZW5kb2JqCjUgMCBvYmoKPDwKL0Jhc2VGb250IC9IZWx2ZXRpY2EtT2JsaXF1ZSAvRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZyAvTmFtZSAvRjMgL1N1YnR5cGUgL1R5cGUxIC9UeXBlIC9Gb250Cj4+CmVuZG9iago2IDAgb2JqCjw8Ci9Bbm5vdHMgWyA0IDAgUiBdIC9Db250ZW50cyAxMCAwIFIgL01lZGlhQm94IFsgMCAwIDU5NS4yNzU2IDg0MS44ODk4IF0gL1BhcmVudCA5IDAgUiAvUmVzb3VyY2VzIDw8Ci9Gb250IDEgMCBSIC9Qcm9jU2V0IFsgL1BERiAvVGV4dCAvSW1hZ2VCIC9JbWFnZUMgL0ltYWdlSSBdCj4+IC9Sb3RhdGUgMCAKICAvVHJhbnMgPDwKCj4+IC9UeXBlIC9QYWdlCj4+CmVuZG9iago3IDAgb2JqCjw8Ci9QYWdlTW9kZSAvVXNlTm9uZSAvUGFnZXMgOSAwIFIgL1R5cGUgL0NhdGFsb2cKPj4KZW5kb2JqCjggMCBvYmoKPDwKL0F1dGhvciAoSXNyYWVsaW4gTWljaGFlbGEgSm9zZXBoKSAvQ3JlYXRpb25EYXRlIChEOjIwMjYxMTE3MDk0ODM4KzAwJzAwJykgL0NyZWF0b3IgKFwodW5zcGVjaWZpZWRcKSkgL0tleXdvcmRzICgpIC9Nb2REYXRlIChEOjIwMjYxMTE3MDk0ODM4KzAwJzAwJykgL1Byb2R1Y2VyIChSZXBvcnRMYWIgUERGIExpYnJhcnkgLSBcKG9wZW5zb3VyY2VcKSkgCiAgL1N1YmplY3QgKFwodW5zcGVjaWZpZWRcKSkgL1RpdGxlIChJc3JhZWxpbiBNaWNoYWVsYSBKb3NlcGggLSBSZXN1bWUpIC9UcmFwcGVkIC9GYWxzZQo+PgplbmRvYmoKOSAwIG9iago8PAovQ291bnQgMSAvS2lkcyBbIDYgMCBSIF0gL1R5cGUgL1BhZ2VzCj4+CmVuZG9iagoxMCAwIG9iago8PAovRmlsdGVyIFsgL0FTQ0lJODVEZWNvZGUgL0ZsYXRlRGVjb2RlIF0gL0xlbmd0aCAyODU3Cj4+CnN0cmVhbQpHYiE7Zj5CQU4+JnE4MDFrYmciRiRTL2ZAY0k5VXNBRlVTbSE+OyMnamQvN0FkX3E7PFI/QCElZyluJ20nJC5xRz1QaCJzaFJHJkhjaC1ra2xgWVhoNWZaKmFwdHEsNWM9WlMpVUItKVVaUiRIc0IjRXNKTDlsKl1oXGhuQkQrQVlvTmMlNG5rQGZsbT1uaiIkZWRVQyFvaDlUbVJZS2pLK0crZXNWR1UmdF8oPFNUOUpBUmRLa1tPbjouQSttKVIwRmJiUmE2Jl5dZyZdJUgjKGkpcEViMiZxJV42LTdRTzdWT05oYmBUL3BqW2MrY0MlbERiYW5TQ3UuIjI/OGdfNnJRcztsblFzUzVQZSk/WTBnOjpgKE1bOS4xTixgLFA2Xkk0Tj1fPlw1XixyJkRFWlpybTY3U1xgRSwoMm0vXG9fb2ZKS0xNP1VkNk5DNi1cJUc7Yy9tbmFfWy5nY1NoPS0+XkFicDIlckEkKmUqWlkmaFszKU1jPzIiITEiVFZcZWpkXkRdajBgXD1XKFJyVUBCbnNFSVtRWjJILSo2cEdmUF8mLD1HaDVvRCNBaEJnLFAwcWBZRzpObWVrTGdZT0pJLDM9aG87LDMhQE8vSGZKK0IxTi0/cnAkI1dCaT5WRjN1NTkxVDRuO0NOSlo4LUpSR1BSOWtuVDdUYjljVWMhJ1lUczQtTlhOLTo1YHU6RTtrXCoiRUxwa3VYP0thYlFQT1szLEcqb2RYWkI4LS1TdS0kaWlCOUZgNHIzcDdvSFUkNSpcci5jRFxOVSxtQkkvJmJBU0tpbERXKTRHcTRNJGJYSnQkZV1zRVYqJiZHTTReJVdCOV4/cjBKWG1JMiEhJjlpbFgjX1BDUSdlKnUia1ZTaGlaQlM/RGN0Sl4xYmxWOUYiO2c2ISFuTzdIYXBtPE5WaEhfK2o4N3MyYy04IWZSazJEXVIpUnBPRE8/JWIpOWYrcTAra09JVnIsWEcwLC5mV0V1WSZgJFVkXSFZTSI0UFNfU2A0REwkXlBCRnBoX3EvNCtoNWRJNWxzbmZvPlEzKDtVZW4vRloucUBmIW1aXW5CYSM3Zj4lIiZKJiFdIWMjUXVmajlXUCVdXSxBUCRwUGJsL1JCSlM7TXUxWyFIbWIxLV9rQ0FoOVteZSxddTVTXVo6NGE/Oiw8RT1ccTdhPjdPUmk7QGNISmAxTUxpZUtMYlJVJ05XVWBLNygzTiQ/QjY+KVVeb3VuWjc9PW5WaUE6b2NabGJeLmo+XDhQW2BWSl82JS1NODgkU2ZudEIha0JOL104VnM0Qz1hWWNmc15VaDNZTyE0LCg7MVdKLj5uOkBJJjdVLGg0dWtXby88TlxFTWYuQDhlSUVla0tIME8xYCxiXSlrKU4wSVtFV0xqUWFYbk5TYyksPWhmNDlHMV4jSG1xYV9QWDxza1pcazRaUE4sc05iNWptUF1vVG5fWElIXXMsbydwUlBDaDBBXEBZc1FtQyFOa11pRUVEJT8/VS1fW2lILiEhTmJuPE0rI1Y3ZSZYMiNuRVM3M09DaEBQSHBQTDE5bVUnbm49XUtHXlU9cjUlV2NSWCotKHFoYkhLWD4mUigtP3VtRm8tXkJyKShxIlxMN05lLEMqQCVmZj1LITJdLnFQc149W3JhLlg/dDUzQEhaUUlMJCxgS0g3UWtVX0hINzdIaDBSTzs5VDUoN2xPJis1XkMjSVlabl5ETUZBJm43alhuLEQpbTRZPUszRlgvaWYhTVs8ajBNLDNwKiE0YTlEVC8vZFQ0a3VIOyhELzpaLTJpRVtkN1MxLlorczR0PmR0QUZVOzokM182YyZaYFBwTStgOCUsbTguOCVIVy5HJU9MYWVSVUFncT1WL1p1L2pFYW5fJzI/ZmdQJz84XDk3M1RoIkkvTTpSRylKcTNgY2Q6NkczN0lgMWBsMVhmYEVzRmFmMUQxNT5sNC5mT04/Ji9xPzQqSmhUUk8qNjIjLHJpWiVwLDUzbUAwOzhWX1kmaXJla0ZQYEcqUy1TNTQtN09COCJURC0kSlYhNE9OJVZNQUZob04yLmFHNz9BTFVCI0tbMisrVVxKIiIiWXFrREhSUWY9Oj5tJEs0TD82QGhzbWtEMV8lV1omQy0jVkklOj9NWCJNR0oqZmFKP11jXlUiYGMzOyQvPEdZWjcyXWIyPEJqLW9WZSZHYGdVJ2MtX2dMV2F0a1FFbWJHdSFiY1Z1JXIwNU5pa0QlJltNXTJebl5hRkQlaltkMDZLPiZPOjkkJiVIYENVdCliYldIXz8rNnJqM3EqXGlwJkdecyVQZ2hoPW9FPU9YU0w7I1lEWD0nTkUpS3UiW2w8SmZuKVFIMlcjNz9hayIpTDAnSjI/I0JdJCM8QidcZiJAOjxLYiNrTHNDU2djX0RYNy0+P1okI2JRQWImakBPaC8/OCFrRFQ+VUY5LCZbVD0oQko6R0EjPj5APUglSEA8bkIsa0JPajhtR2QpK0EkW2UuVyxEN11NRyRWdWg9QVtTLFBINmAyREtOcDJRO2xUYipUZUp1WlMma0JaRWtwV2wvIThtWDJsQF5XSmQtS2cxK3EuTmxwbDUnL29DTy9fR29TUmE1dSZCYkY5K0lXRzQ9Q1ByJHErQyxaY3A2KWskZjRBJkZBRiZrW2BPXVosOmMoaCQhWzQpMjonL1pBWEMzX0RgRFNILi1DOmdxOjJLQWMramArb25NX2E/VFcmOzpnSTgkOS4iL1pySk8uNUlPaD44RGRrOEI+Y05kcTwtRi8/L2ReQj1FWic0YUlhOms6LU1gcygubCYoUC1aWDFqTjJmTjNMSyxePl9pV2IyMEVUU1RpWEQmXUEsVTFuTXU/PzhePFtWVTg/a29Sai9LKDxAY1NxMVktL0wxNXAlQV4laWZoQTxwSGlLRTRhdWcyZEpqailvUFZJWVxBJTBbaSE/SWhmIlkpaUA4SztvKTNpZkpTMG88ak4rXE9gLzhpOl0yVFRDLyZfJjFDMmhEJl8xPD9ZRD0hKFArQk90QSxtaVtZYShdZVhXTkNpIkBCOTU4ZGRrJElnZU5MVSleaUlWNGE7bkY/M0kubylxZi5DPSVUJjoyRDxPRUBrZ2ZNUnAmNjhDZSdIXVIqLEdgJSVUTTNTVnFWLWRxJCFnQkxKamBVcithcEhsVWBcJFBDbTktPmYyJT1HND1VXy5MMGdiQl9wLnFGLVxYbjtvaHFGbWQyWGY8U2EuRjEqNChoZDRUQDIjY1VRTTw+KDxGKFhtYD41XW5eL1tvZl9uVlprZU06NVpcQSVedUk3UWtQYSpdLCdyXVs8S2c1NE4jYGJhZUU4T1lfaF1aNjxHK21XYFcvWFIpR2lnMmAvJjtmKGJPLlBsPiQvbXBCOkImclEwPlNNNE4/ciErKktWI2hYPWxUInM3PUBbbE1bTy5IcGFUPDFqYyUrVWVtZz0pb1FnOycuUlQqR10iSllBc1gxMVdbcVx1ZmcuNDFYWWUjYS1zLls3SGBkPVk/QllBWSRHSTVVNWxcPUtSajY7Vk4oREo3LjttLC1DREBiXEp0RUJwaFdfJ0UvUWoiYVluM00wX05WWjBeWTVAc0Y7TysjVFZwX29aYGVFUlpuRCVGOyFHUUIoRFM3XnB1Q1QpUkNxPm9DdUNoXCtGS3BaYz9LXV4zRUZELDRTKlopVic3V2JeRzpLM0kyPldyYTlFPiVlNTFxZitSZTBEZWhDXkBYVyE+TzVjO05xXVEjcU0rQ2dHZys+S2ZBOTpyJjI1PVVfW2FtXWJiP0htS1FobkhVOUosMH4+ZW5kc3RyZWFtCmVuZG9iagp4cmVmCjAgMTEKMDAwMDAwMDAwMCA2NTUzNSBmIAowMDAwMDAwMDYxIDAwMDAwIG4gCjAwMDAwMDAxMTIgMDAwMDAgbiAKMDAwMDAwMDIxOSAwMDAwMCBuIAowMDAwMDAwMzMxIDAwMDAwIG4gCjAwMDAwMDA1NDQgMDAwMDAgbiAKMDAwMDAwMDY1OSAwMDAwMCBuIAowMDAwMDAwODgxIDAwMDAwIG4gCjAwMDAwMDA5NDkgMDAwMDAgbiAKMDAwMDAwMTI2MCAwMDAwMCBuIAowMDAwMDAxMzE5IDAwMDAwIG4gCnRyYWlsZXIKPDwKL0lEIApbPDYzMWQzMzdkNzRiZTVmM2QwZTliZjdiY2YyODQyYzMyPjw2MzFkMzM3ZDc0YmU1ZjNkMGU5YmY3YmNmMjg0MmMzMj5dCiUgUmVwb3J0TGFiIGdlbmVyYXRlZCBQREYgZG9jdW1lbnQgLS0gZGlnZXN0IChvcGVuc291cmNlKQoKL0luZm8gOCAwIFIKL1Jvb3QgNyAwIFIKL1NpemUgMTEKPj4Kc3RhcnR4cmVmCjQyNjgKJSVFT0YK";
-        $$("[data-resume]").forEach(function(a){ a.href = "data:application/pdf;base64," + RESUME; });
+  var ST = {"Languages":["Java 11","SQL","JavaScript","HTML","CSS"],
+    "Frameworks":["Spring Boot","Spring MVC","Spring Data JPA","Hibernate","Spring Batch","Spring Tiles","Java EE","Jakarta EE","Struts2","DWR","EHCache","Bootstrap","jQuery"],
+    "Databases":["MySQL","PostgreSQL","IBM DB2"],
+    "Cloud & DevOps":["AWS S3","AWS SES","Docker","Azure Repos","Azure DevOps"],
+    "APIs & Security":["RESTful APIs","OAuth 2.0","JJWT"],
+    "Testing":["JUnit","Mockito","Postman"],
+    "Reporting & Visualization":["Jaspersoft Studio","Apache ECharts"],
+    "Version Control":["Git","TortoiseSVN"],
+    "Methodologies":["Agile","Waterfall","Jira"]};
+  var tb = $("#tabs"), pl = $("#pills");
+  function show(k){
+    $$("#tabs button").forEach(function(b){ b.setAttribute("aria-pressed", String(b.textContent === k)); });
+    pl.innerHTML = "";
+    ST[k].forEach(function(x, i){ var e = d.createElement("span"); e.className = "pill"; e.textContent = x; e.style.animationDelay = i * 40 + "ms"; pl.appendChild(e); });
+  }
+  Object.keys(ST).forEach(function(k){ var b = d.createElement("button"); b.type = "button"; b.className = "tab"; b.textContent = k; b.onclick = function(){ show(k); }; tb.appendChild(b); });
+  show("Languages");
 
-        // Chat backend: POST {question} -> {answer}. CORS is configured for the GitHub Pages origin.
-        var API_URL = "https://portfolio-chatbot-yoaz.onrender.com/ask";
-        var CH = [  "What are Israelin's main skills?", "Tell me about her professional experience", "Why did she take a career break?", "What does she create outside of coding?"];        var lg = $("#log"), qi = $("#q");
-        function renderAssistantMarkdown(text){
-            if (typeof marked === "undefined" || typeof DOMPurify === "undefined") {
-                return d.createTextNode(text);
-            }
-            marked.use({breaks:true, gfm:true});
-            var rendered = marked.parse(String(text || ""));
-            var clean = DOMPurify.sanitize(rendered, {
-                ALLOWED_TAGS:["p","br","strong","em","b","i","ul","ol","li","code","pre","a","blockquote"],
-                ALLOWED_ATTR:["href","title","target","rel"],
-                ALLOWED_URI_REGEXP:/^(?:(?:https?|mailto):|[^a-z]|[a-z+.-]+(?:[^a-z+.\-:]|$))/i
-            });
-            var template = d.createElement("template");
-            template.innerHTML = clean;
-            template.content.querySelectorAll("a").forEach(function(link){
-                link.target = "_blank";
-                link.rel = "noopener noreferrer";
-            });
-            return template.content;
-        }
-        function add(t, w){
-            var m = d.createElement("div");
-            m.className = "msg " + w;
-            if (w === "bot") {
-                m.textContent = t;
-            } else {
-                m.textContent = t;
-            }
-            lg.appendChild(m);
-            lg.scrollTop = lg.scrollHeight;
-            return m;
-        }
-        function setAssistantContent(element, text){
-            element.replaceChildren();
-            var rendered = renderAssistantMarkdown(text);
-            if (rendered.nodeType) {
-                element.appendChild(rendered);
-            } else {
-                element.appendChild(rendered);
-            }
-        }
-        async function ans(q){
-            try {
-                var r = await fetch(API_URL, {
-                    method:"POST",
-                    headers:{"Content-Type":"application/json"},
-                    body:JSON.stringify({question:q})
-                });
+  var CT = [["🎨","Drawing","Sketching first, like designing a schema before writing code."],
+    ["🖌️","Painting","Working in layers, like building features and refining the details."],
+    ["📖","Crafting recipes","A recipe is an algorithm: inputs, clear steps and a tested result."],
+    ["🍳","Cooking","Improvising under pressure, like debugging a production issue."],
+    ["🧁","Baking","Precision and patience, like a careful deployment."],
+    ["✂️","Art and craft projects","Making something from scratch, end to end, with full ownership."],
+    ["🌱","Gardening","Slow growth and regular care, like maintaining a healthy codebase."]];
+  var tg = $("#tiles");
+  CT.forEach(function(c){
+    var b = d.createElement("div"); b.className = "tile";
+    b.innerHTML = "<b>" + c[0] + "</b><strong>" + c[1] + "</strong><span>" + c[2] + "</span>";
+    tg.appendChild(b);
+  });
 
-                var j;
-                try {
-                    j = await r.json();
-                } catch (e) {
-                    return "Sorry, the chatbot returned an unexpected response. Please try again.";
-                }
+  var RESUME = "JVBERi0xLjQKJZOMi54gUmVwb3J0TGFiIEdlbmVyYXRlZCBQREYgZG9jdW1lbnQgKG9wZW5zb3VyY2UpCjEgMCBvYmoKPDwKL0YxIDIgMCBSIC9GMiAzIDAgUiAvRjMgNSAwIFIKPj4KZW5kb2JqCjIgMCBvYmoKPDwKL0Jhc2VGb250IC9IZWx2ZXRpY2EgL0VuY29kaW5nIC9XaW5BbnNpRW5jb2RpbmcgL05hbWUgL0YxIC9TdWJ0eXBlIC9UeXBlMSAvVHlwZSAvRm9udAo+PgplbmRvYmoKMyAwIG9iago8PAovQmFzZUZvbnQgL0hlbHZldGljYS1Cb2xkIC9FbmNvZGluZyAvV2luQW5zaUVuY29kaW5nIC9OYW1lIC9GMiAvU3VidHlwZSAvVHlwZTEgL1R5cGUgL0ZvbnQKPj4KZW5kb2JqCjQgMCBvYmoKPDwKL0EgPDwKL1MgL1VSSSAvVHlwZSAvQWN0aW9uIC9VUkkgKGh0dHBzOi8vd3d3LmxpbmtlZGluLmNvbS9pbi9pc3JhZWxpbi1taWNoYWVsYS1qb3NlcGgtYjA4ODI0MWIwLykKPj4gL0JvcmRlciBbIDAgMCAwIF0gL1JlY3QgWyAxNTguMTg1IDc2Mi4yMjMzIDM2NS4yNTcgNzczLjAyMzMgXSAvU3VidHlwZSAvTGluayAvVHlwZSAvQW5ub3QKPj4KZW5kb2JqCjUgMCBvYmoKPDwKL0Jhc2VGb250IC9IZWx2ZXRpY2EtT2JsaXF1ZSAvRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZyAvTmFtZSAvRjMgL1N1YnR5cGUgL1R5cGUxIC9UeXBlIC9Gb250Cj4+CmVuZG9iago2IDAgb2JqCjw8Ci9Bbm5vdHMgWyA0IDAgUiBdIC9Db250ZW50cyAxMCAwIFIgL01lZGlhQm94IFsgMCAwIDU5NS4yNzU2IDg0MS44ODk4IF0gL1BhcmVudCA5IDAgUiAvUmVzb3VyY2VzIDw8Ci9Gb250IDEgMCBSIC9Qcm9jU2V0IFsgL1BERiAvVGV4dCAvSW1hZ2VCIC9JbWFnZUMgL0ltYWdlSSBdCj4+IC9Sb3RhdGUgMCAKICAvVHJhbnMgPDwKCj4+IC9UeXBlIC9QYWdlCj4+CmVuZG9iago3IDAgb2JqCjw8Ci9QYWdlTW9kZSAvVXNlTm9uZSAvUGFnZXMgOSAwIFIgL1R5cGUgL0NhdGFsb2cKPj4KZW5kb2JqCjggMCBvYmoKPDwKL0F1dGhvciAoSXNyYWVsaW4gTWljaGFlbGEgSm9zZXBoKSAvQ3JlYXRpb25EYXRlIChEOjIwMjYxMTE3MDk0ODM4KzAwJzAwJykgL0NyZWF0b3IgKFwodW5zcGVjaWZpZWRcKSkgL0tleXdvcmRzICgpIC9Nb2REYXRlIChEOjIwMjYxMTE3MDk0ODM4KzAwJzAwJykgL1Byb2R1Y2VyIChSZXBvcnRMYWIgUERGIExpYnJhcnkgLSBcKG9wZW5zb3VyY2VcKSkgCiAgL1N1YmplY3QgKFwodW5zcGVjaWZpZWRcKSkgL1RpdGxlIChJc3JhZWxpbiBNaWNoYWVsYSBKb3NlcGggLSBSZXN1bWUpIC9UcmFwcGVkIC9GYWxzZQo+PgplbmRvYmoKOSAwIG9iago8PAovQ291bnQgMSAvS2lkcyBbIDYgMCBSIF0gL1R5cGUgL1BhZ2VzCj4+CmVuZG9iagoxMCAwIG9iago8PAovRmlsdGVyIFsgL0FTQ0lJODVEZWNvZGUgL0ZsYXRlRGVjb2RlIF0gL0xlbmd0aCAyODU3Cj4+CnN0cmVhbQpHYiE7Zj5CQU4+JnE4MDFrYmciRiRTL2ZAY0k5VXNBRlVTbSE+OyMnamQvN0FkX3E7PFI/QCElZyluJ20nJC5xRz1QaCJzaFJHJkhjaC1ra2xgWVhoNWZaKmFwdHEsNWM9WlMpVUItKVVaUiRIc0IjRXNKTDlsKl1oXGhuQkQrQVlvTmMlNG5rQGZsbT1uaiIkZWRVQyFvaDlUbVJZS2pLK0crZXNWR1UmdF8oPFNUOUpBUmRLa1tPbjouQSttKVIwRmJiUmE2Jl5dZyZdJUgjKGkpcEViMiZxJV42LTdRTzdWT05oYmBUL3BqW2MrY0MlbERiYW5TQ3UuIjI/OGdfNnJRcztsblFzUzVQZSk/WTBnOjpgKE1bOS4xTixgLFA2Xkk0Tj1fPlw1XixyJkRFWlpybTY3U1xgRSwoMm0vXG9fb2ZKS0xNP1VkNk5DNi1cJUc7Yy9tbmFfWy5nY1NoPS0+XkFicDIlckEkKmUqWlkmaFszKU1jPzIiITEiVFZcZWpkXkRdajBgXD1XKFJyVUBCbnNFSVtRWjJILSo2cEdmUF8mLD1HaDVvRCNBaEJnLFAwcWBZRzpObWVrTGdZT0pJLDM9aG87LDMhQE8vSGZKK0IxTi0/cnAkI1dCaT5WRjN1NTkxVDRuO0NOSlo4LUpSR1BSOWtuVDdUYjljVWMhJ1lUczQtTlhOLTo1YHU6RTtrXCoiRUxwa3VYP0thYlFQT1szLEcqb2RYWkI4LS1TdS0kaWlCOUZgNHIzcDdvSFUkNSpcci5jRFxOVSxtQkkvJmJBU0tpbERXKTRHcTRNJGJYSnQkZV1zRVYqJiZHTTReJVdCOV4/cjBKWG1JMiEhJjlpbFgjX1BDUSdlKnUia1ZTaGlaQlM/RGN0Sl4xYmxWOUYiO2c2ISFuTzdIYXBtPE5WaEhfK2o4N3MyYy04IWZSazJEXVIpUnBPRE8/JWIpOWYrcTAra09JVnIsWEcwLC5mV0V1WSZgJFVkXSFZTSI0UFNfU2A0REwkXlBCRnBoX3EvNCtoNWRJNWxzbmZvPlEzKDtVZW4vRloucUBmIW1aXW5CYSM3Zj4lIiZKJiFdIWMjUXVmajlXUCVdXSxBUCRwUGJsL1JCSlM7TXUxWyFIbWIxLV9rQ0FoOVteZSxddTVTXVo6NGE/Oiw8RT1ccTdhPjdPUmk7QGNISmAxTUxpZUtMYlJVJ05XVWBLNygzTiQ/QjY+KVVeb3VuWjc9PW5WaUE6b2NabGJeLmo+XDhQW2BWSl82JS1NODgkU2ZudEIha0JOL104VnM0Qz1hWWNmc15VaDNZTyE0LCg7MVdKLj5uOkBJJjdVLGg0dWtXby88TlxFTWYuQDhlSUVla0tIME8xYCxiXSlrKU4wSVtFV0xqUWFYbk5TYyksPWhmNDlHMV4jSG1xYV9QWDxza1pcazRaUE4sc05iNWptUF1vVG5fWElIXXMsbydwUlBDaDBBXEBZc1FtQyFOa11pRUVEJT8/VS1fW2lILiEhTmJuPE0rI1Y3ZSZYMiNuRVM3M09DaEBQSHBQTDE5bVUnbm49XUtHXlU9cjUlV2NSWCotKHFoYkhLWD4mUigtP3VtRm8tXkJyKShxIlxMN05lLEMqQCVmZj1LITJdLnFQc149W3JhLlg/dDUzQEhaUUlMJCxgS0g3UWtVX0hINzdIaDBSTzs5VDUoN2xPJis1XkMjSVlabl5ETUZBJm43alhuLEQpbTRZPUszRlgvaWYhTVs8ajBNLDNwKiE0YTlEVC8vZFQ0a3VIOyhELzpaLTJpRVtkN1MxLlorczR0PmR0QUZVOzokM182YyZaYFBwTStgOCUsbTguOCVIVy5HJU9MYWVSVUFncT1WL1p1L2pFYW5fJzI/ZmdQJz84XDk3M1RoIkkvTTpSRylKcTNgY2Q6NkczN0lgMWBsMVhmYEVzRmFmMUQxNT5sNC5mT04/Ji9xPzQqSmhUUk8qNjIjLHJpWiVwLDUzbUAwOzhWX1kmaXJla0ZQYEcqUy1TNTQtN09COCJURC0kSlYhNE9OJVZNQUZob04yLmFHNz9BTFVCI0tbMisrVVxKIiIiWXFrREhSUWY9Oj5tJEs0TD82QGhzbWtEMV8lV1omQy0jVkklOj9NWCJNR0oqZmFKP11jXlUiYGMzOyQvPEdZWjcyXWIyPEJqLW9WZSZHYGdVJ2MtX2dMV2F0a1FFbWJHdSFiY1Z1JXIwNU5pa0QlJltNXTJebl5hRkQlaltkMDZLPiZPOjkkJiVIYENVdCliYldIXz8rNnJqM3EqXGlwJkdecyVQZ2hoPW9FPU9YU0w7I1lEWD0nTkUpS3UiW2w8SmZuKVFIMlcjNz9hayIpTDAnSjI/I0JdJCM8QidcZiJAOjxLYiNrTHNDU2djX0RYNy0+P1okI2JRQWImakBPaC8/OCFrRFQ+VUY5LCZbVD0oQko6R0EjPj5APUglSEA8bkIsa0JPajhtR2QpK0EkW2UuVyxEN11NRyRWdWg9QVtTLFBINmAyREtOcDJRO2xUYipUZUp1WlMma0JaRWtwV2wvIThtWDJsQF5XSmQtS2cxK3EuTmxwbDUnL29DTy9fR29TUmE1dSZCYkY5K0lXRzQ9Q1ByJHErQyxaY3A2KWskZjRBJkZBRiZrW2BPXVosOmMoaCQhWzQpMjonL1pBWEMzX0RgRFNILi1DOmdxOjJLQWMramArb25NX2E/VFcmOzpnSTgkOS4iL1pySk8uNUlPaD44RGRrOEI+Y05kcTwtRi8/L2ReQj1FWic0YUlhOms6LU1gcygubCYoUC1aWDFqTjJmTjNMSyxePl9pV2IyMEVUU1RpWEQmXUEsVTFuTXU/PzhePFtWVTg/a29Sai9LKDxAY1NxMVktL0wxNXAlQV4laWZoQTxwSGlLRTRhdWcyZEpqailvUFZJWVxBJTBbaSE/SWhmIlkpaUA4SztvKTNpZkpTMG88ak4rXE9gLzhpOl0yVFRDLyZfJjFDMmhEJl8xPD9ZRD0hKFArQk90QSxtaVtZYShdZVhXTkNpIkBCOTU4ZGRrJElnZU5MVSleaUlWNGE7bkY/M0kubylxZi5DPSVUJjoyRDxPRUBrZ2ZNUnAmNjhDZSdIXVIqLEdgJSVUTTNTVnFWLWRxJCFnQkxKamBVcithcEhsVWBcJFBDbTktPmYyJT1HND1VXy5MMGdiQl9wLnFGLVxYbjtvaHFGbWQyWGY8U2EuRjEqNChoZDRUQDIjY1VRTTw+KDxGKFhtYD41XW5eL1tvZl9uVlprZU06NVpcQSVedUk3UWtQYSpdLCdyXVs8S2c1NE4jYGJhZUU4T1lfaF1aNjxHK21XYFcvWFIpR2lnMmAvJjtmKGJPLlBsPiQvbXBCOkImclEwPlNNNE4/ciErKktWI2hYPWxUInM3PUBbbE1bTy5IcGFUPDFqYyUrVWVtZz0pb1FnOycuUlQqR10iSllBc1gxMVdbcVx1ZmcuNDFYWWUjYS1zLls3SGBkPVk/QllBWSRHSTVVNWxcPUtSajY7Vk4oREo3LjttLC1DREBiXEp0RUJwaFdfJ0UvUWoiYVluM00wX05WWjBeWTVAc0Y7TysjVFZwX29aYGVFUlpuRCVGOyFHUUIoRFM3XnB1Q1QpUkNxPm9DdUNoXCtGS3BaYz9LXV4zRUZELDRTKlopVic3V2JeRzpLM0kyPldyYTlFPiVlNTFxZitSZTBEZWhDXkBYVyE+TzVjO05xXVEjcU0rQ2dHZys+S2ZBOTpyJjI1PVVfW2FtXWJiP0htS1FobkhVOUosMH4+ZW5kc3RyZWFtCmVuZG9iagp4cmVmCjAgMTEKMDAwMDAwMDAwMCA2NTUzNSBmIAowMDAwMDAwMDYxIDAwMDAwIG4gCjAwMDAwMDAxMTIgMDAwMDAgbiAKMDAwMDAwMDIxOSAwMDAwMCBuIAowMDAwMDAwMzMxIDAwMDAwIG4gCjAwMDAwMDA1NDQgMDAwMDAgbiAKMDAwMDAwMDY1OSAwMDAwMCBuIAowMDAwMDAwODgxIDAwMDAwIG4gCjAwMDAwMDA5NDkgMDAwMDAgbiAKMDAwMDAwMTI2MCAwMDAwMCBuIAowMDAwMDAxMzE5IDAwMDAwIG4gCnRyYWlsZXIKPDwKL0lEIApbPDYzMWQzMzdkNzRiZTVmM2QwZTliZjdiY2YyODQyYzMyPjw2MzFkMzM3ZDc0YmU1ZjNkMGU5YmY3YmNmMjg0MmMzMj5dCiUgUmVwb3J0TGFiIGdlbmVyYXRlZCBQREYgZG9jdW1lbnQgLS0gZGlnZXN0IChvcGVuc291cmNlKQoKL0luZm8gOCAwIFIKL1Jvb3QgNyAwIFIKL1NpemUgMTEKPj4Kc3RhcnR4cmVmCjQyNjgKJSVFT0YK";
+  $$("[data-resume]").forEach(function(a){ a.href = "data:application/pdf;base64," + RESUME; });
 
-                if (!r.ok) {
-                    if (r.status === 429) {
-                        return "Sorry, too many requests have been sent. Please wait a moment and try again.";
-                    }
-                    return "Sorry, the chatbot service is unavailable right now. Please try again shortly.";
-                }
-
-                if (j && typeof j.answer === "string" && j.answer.trim()) {
-                    return j.answer;
-                }
-
-                return "Sorry, the chatbot returned an unexpected response. Please try again.";
-            } catch (e) {
-                return "Sorry, there was a network problem while contacting the chatbot. Please check your connection and try again.";
-            }
-        }
-        async function ask(q){
-            q = (q || "").trim(); if (!q) return;
-            add(q, "me"); qi.value = "";
-            var w = add("Thinking…", "bot"), a = await ans(q);
-            setTimeout(function(){
-                setAssistantContent(w, a);
-                lg.scrollTop = lg.scrollHeight;
-            }, 350);
-        }
-        CH.forEach(function(c){ var b = d.createElement("button"); b.type = "button"; b.className = "cq"; b.textContent = c; b.onclick = function(){ ask(c); }; $("#chips").appendChild(b); });
-        $("#send").onclick = function(){ ask(qi.value); };
-        qi.addEventListener("keydown", function(e){ if (e.key === "Enter") ask(qi.value); });
-    })();
+  // Chat backend: POST {question} -> {answer}. CORS is configured for the GitHub Pages origin.
+  var API_URL = "https://portfolio-chatbot-yoaz.onrender.com/ask";
+  var CH = ["What are Israelin's main skills?", "Tell me about her professional experience", "Why did she take a career break?", "What does she create outside of coding?"];
+  var lg = $("#log"), qi = $("#q"), busy = false;
+  if (window.marked) marked.use({breaks:true, gfm:true});
+  function renderMd(text){
+    if (!window.marked || !window.DOMPurify) return d.createTextNode(String(text || ""));
+    var clean = DOMPurify.sanitize(marked.parse(String(text || "")), {
+      ALLOWED_TAGS:["p","br","strong","em","b","i","ul","ol","li","code","pre","a","blockquote"],
+      ALLOWED_ATTR:["href","title","target","rel"],
+      ALLOWED_URI_REGEXP:/^(?:(?:https?|mailto):|[^a-z]|[a-z+.-]+(?:[^a-z+.\-:]|$))/i
+    });
+    var t = d.createElement("template"); t.innerHTML = clean;
+    t.content.querySelectorAll("a").forEach(function(l){ l.target = "_blank"; l.rel = "noopener noreferrer"; });
+    return t.content;
+  }
+  function add(t, w){ var m = d.createElement("div"); m.className = "msg " + w; m.textContent = t; lg.appendChild(m); lg.scrollTop = lg.scrollHeight; return m; }
+  async function ans(q){
+    var ctl = new AbortController(), timer = setTimeout(function(){ ctl.abort(); }, 60000);
+    try {
+      var r = await fetch(API_URL, {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify({question:q}), signal:ctl.signal});
+      var j = null; try { j = await r.json(); } catch (e) {}
+      if (r.status === 429) return "Sorry, too many requests have been sent. Please wait a moment and try again.";
+      if (!r.ok) return "Sorry, TOB is unavailable right now. Please try again shortly.";
+      if (j && typeof j.answer === "string" && j.answer.trim()) return j.answer;
+      return "Sorry, TOB returned an unexpected response. Please try again.";
+    } catch (e) {
+      return e.name === "AbortError" ? "TOB took too long to wake up. Please try again in a moment." : "Sorry, there was a network problem while contacting TOB. Please check your connection and try again.";
+    } finally { clearTimeout(timer); }
+  }
+  async function ask(q){
+    q = (q || "").trim(); if (!q || busy) return;
+    busy = true; add(q, "me"); qi.value = "";
+    var w = add("Thinking…", "bot");
+    var slow = setTimeout(function(){ w.textContent = "Waking up TOB… the free server sleeps when idle, so the first answer can take up to a minute."; }, 4000);
+    var a = await ans(q);
+    clearTimeout(slow);
+    w.replaceChildren(renderMd(a));
+    lg.scrollTop = lg.scrollHeight; busy = false;
+  }
+  CH.forEach(function(c){ var b = d.createElement("button"); b.type = "button"; b.className = "cq"; b.textContent = c; b.onclick = function(){ ask(c); }; $("#chips").appendChild(b); });
+  $("#send").onclick = function(){ ask(qi.value); };
+  qi.addEventListener("keydown", function(e){ if (e.key === "Enter") ask(qi.value); });
+})();
 </script>
 </body>
 </html>
